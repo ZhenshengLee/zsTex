@@ -1,0 +1,33 @@
+.idea/
+.vscode/.browse.VC.db
+bin/
+build/
+
+# Ignore big multimedia files
+*.avi
+*.mp4
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+# Ignore additional Intermediate files for xelatex
+*.nav
+*.snm
+
+## Intermediate documents:
+*.dvi
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf

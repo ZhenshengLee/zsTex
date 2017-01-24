@@ -1,29 +1,34 @@
-# README #
+# VSCode使用Latex
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## 参考
 
-### What is this repository for? ###
+>[CMakeUserUseLATEX](https://cmake.org/Wiki/CMakeUserUseLATEX )
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## 安装
 
-### How do I get set up? ###
+### windows
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* 下载TexLive-2016.iso
 
-### Contribution guidelines ###
+* install-tl-windows.bat
 
-* Writing tests
-* Code review
-* Other guidelines
+### Ubuntu
 
-### Who do I talk to? ###
+```shell
+sudo apt-get install texlive-full latex-beamer
+```
 
-* Repo owner or admin
-* Other community or team contact
+## VSCode配置
+
+### 安装VSCode插件
+
+```shell
+LaTeX Language Support
+LateX Preview
+```
+
+### 设置
+
+```shell
+"latex-preview.command": "xelatex"
+```
