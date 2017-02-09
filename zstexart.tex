@@ -1,5 +1,5 @@
 \documentclass[a4paper,12pt]{ctexart}
-\input{data/style}
+\input{./style/style.tex}
 
 \title{我的xelatex文档模板}
 \author{黎振胜}
@@ -23,7 +23,7 @@
 \begin{figure}[h]
 \centering
 \label{pic:picturelabel}
-\includegraphics[width=\textwidth]{data/figures/9}
+\includegraphics[width=\textwidth]{./figure/9.eps}
 \caption{\LaTeX{}图片插入}
 \end{figure}
 \end{lstlisting}
@@ -32,7 +32,7 @@
 \begin{figure}[h]
 \centering
 \label{pic:picturelabel}
-\includegraphics[width=\textwidth]{data/figures/9}
+\includegraphics[width=\textwidth]{./figure/9.eps}
 \caption{\LaTeX{}图片插入}
 \end{figure}
 
@@ -150,7 +150,7 @@
 % 参考文献示例
 \section{参考文献使用}
 参考文献使用的样式为 plainnat，bib 文件所在的位置为 data/reference.bib。当然，参考文献可以使用多个文件。比如我的参考文献比较多，分类存在 1.bib、2.bib 这两个文件中
-可以使用命令：\textbackslash{}bibliography\{data/1.bib,data/2.bib\}。
+可以使用命令：\textbackslash{}bibliography\{./bib/1.bib,./bib/2.bib\}。
 我在 data/reference.bib 文件中加入了一条记录，使用看我的右上角\cite{刘海洋2013latex}。
 另外，我这里为了让参考文献在一页的开头使用了\textbackslash{}newpage 命令，空出来一页之后再添加参考文献。
 为了让参考文献的标题居中，在插入参考文献之前添加了如下命令：
@@ -173,5 +173,5 @@
 \titleformat{\section}{\centering\sanhao}{\chaptertitlename}{15pt}{}
 % % 指定参考文献样式和 bib 文件
 \bibliographystyle{plainnat}
-\bibliography{data/reference}
+\bibliography{./bib/reference}
 \end{document}
