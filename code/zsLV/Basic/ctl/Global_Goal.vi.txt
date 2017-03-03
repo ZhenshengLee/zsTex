@@ -1,0 +1,24 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=3 name="Global_Goal.ctl">
+<TITLE><NO_TITLE name="Global_Goal.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=81 type="字符串" name="Goal">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Goal</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><SAME_AS_LABEL></DEFAULT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

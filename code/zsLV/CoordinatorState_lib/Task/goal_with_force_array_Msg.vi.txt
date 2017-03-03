@@ -1,0 +1,183 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=53 name="States.lvlib:CoordinatorState.lvclass:goal_with_force_array_Msg.vi">
+<TITLE>读取模板</TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error in (no error)">
+		<DESC><<B>>错误输入<</B>>簇能够接收之前调用的VI连线传递的错误信息。当其它VI发生错误时，根据该信息可决定是否需跳过执行某些功能。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。 </DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输入（无错误）</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>布尔值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>输入用于确定错误或警告。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>字符串描述了错误或警告的来源。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>簇可将VI的错误或警告信息传递至其它VI。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>布尔值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>输入用于确定错误或警告。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>字符串描述了错误或警告的来源。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CoordinatorState输入</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=82 type="数组" name="值(信号)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>值(信号)</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<CONTROL ID=83 type="簇" name="goal_with_force">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>goal_with_force</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=79 type="布尔" name="force_bool">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>force_bool</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值" name="pose_rot">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>pose_rot</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值" name="pose_z">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>pose_z</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值" name="pose_Y">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>pose_Y</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值" name="pose_X">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>pose_X</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Process State out</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+		</BDCONTENT>
+		<BDCONTENT>
+		</BDCONTENT>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

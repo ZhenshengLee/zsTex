@@ -1,0 +1,51 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=4 name="Actor_Control.ctl">
+<TITLE><NO_TITLE name="Actor_Control.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="Actor_Control">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Actor_Control</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="JoyStick">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003D><STRINGS><STRING>JoyStick</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>JoyStick</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="DNL_Stop">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=SYSFONT color=FF0000><STRINGS><STRING>停止程序</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT color=FF0000>DNL_Stop</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="RemoteP3AT">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003D><STRINGS><STRING>RemoteP3AT</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>RemoteP3AT</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

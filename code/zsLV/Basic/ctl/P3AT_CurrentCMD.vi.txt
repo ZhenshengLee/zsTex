@@ -1,0 +1,81 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=6 name="P3AT_CurrentCMD.ctl">
+<TITLE><NO_TITLE name="P3AT_CurrentCMD.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="P3AT_CurrentCMD">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_CurrentCMD</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=81 type="字符串" name="StartPoint">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>StartPoint</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="EndPoint">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>EndPoint</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="Action">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Action</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="Direction">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Direction</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="Distance">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Distance</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="Velocity">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Velocity</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

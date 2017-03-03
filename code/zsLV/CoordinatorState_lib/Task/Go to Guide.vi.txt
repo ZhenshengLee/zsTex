@@ -1,0 +1,121 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=13 name="States.lvlib:CoordinatorState.lvclass:Go to Guide.vi">
+<TITLE><NO_TITLE name="States.lvlib:CoordinatorState.lvclass:Go to Guide.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error in (no error)">
+		<DESC>The <<B>>error in<</B>> cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed. </DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error in (no error)</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC>The <<B>>status<</B>> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC>The <<B>>code<</B>> input identifies the error or warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC>The <<B>>source<</B>> string describes the origin of the error or warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC>The <<B>>error out<</B>> cluster passes error or warning information out of a VI to be used by other VIs.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC>The <<B>>status<</B>> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC>The <<B>>code<</B>> input identifies the error or warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC>The <<B>>source<</B>> string describes the origin of the error or warning.<LF>
+<LF>
+The pop-up option <<B>>Explain Error<</B>> (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState out</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<NODE ID=49 type="SubVI" subVIName="Change State.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

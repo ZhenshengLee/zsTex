@@ -1,0 +1,108 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=3 name="New_To_Old.vi">
+<TITLE><NO_TITLE name="New_To_Old.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>包含错误信息。该输出提供标准错误输出功能。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>的值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>是错误或警告代码。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告的源，大多数情况下表示出现错误或警告的节点名。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error in">
+		<DESC><<B>>错误输出<</B>>包含错误信息。该输出提供标准错误输出功能。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输入</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>的值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>是错误或警告代码。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告的源，大多数情况下表示出现错误或警告的节点名。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=202 type="Flat Sequence">
+		<DESC></DESC>
+		<NODE ID=289 type="Sequence Frame">
+			<DESC></DESC>
+			<BDCONTENT>
+				<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+					<DESC></DESC>
+				</NODE>
+			</BDCONTENT>
+		</NODE>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

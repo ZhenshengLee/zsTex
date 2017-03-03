@@ -1,0 +1,548 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=45 name="States.lvlib:CoordinatorState.lvclass:CoordinatorState.ctl">
+<TITLE><NO_TITLE name="States.lvlib:CoordinatorState.lvclass:CoordinatorState.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="DNL_Cluster of class private data">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>DNL_Cluster of class private data</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<DESC><<B>>Message Enqueuer in<</B>> specifies the reference needed to send a message to an actor.</DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>ControlPanelQueue</STEXT></LABEL></PART>
+			</PARTS>
+			<DESC><<B>>Message Enqueuer in<</B>> specifies the reference needed to send a message to an actor.</DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>GlobalPlannerQueue</STEXT></LABEL></PART>
+			</PARTS>
+			<DESC><<B>>Message Enqueuer in<</B>> specifies the reference needed to send a message to an actor.</DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>MapQueue</STEXT></LABEL></PART>
+			</PARTS>
+			<DESC><<B>>Message Enqueuer in<</B>> specifies the reference needed to send a message to an actor.</DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3ATQueue</STEXT></LABEL></PART>
+			</PARTS>
+			<CONTROL ID=85 type="控件引用句柄" name="sensor_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>sensor_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="Semantic_Voice_Array_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_Voice_Array_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=82 type="数组" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<CONTROL ID=81 type="字符串" name="匹配之前">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="robot_position_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>robot_position_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=80 type="数值" name="global x">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="global y">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="global z">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>global z</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name=" floor NO.">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT> floor NO.</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="global_rot">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="XBOX_Control_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>XBOX_Control_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="P3AT_Panel_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_Panel_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=88 type="温度计" name="max_vel">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=88 type="温度计" name="max_rot">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=239 type="单选按钮" name="Control_Mode">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+											</PARTS>
+											<CONTENT>
+												<GROUPER>
+													<PARTS>
+													</PARTS></GROUPER>
+												<CONTROL ID=79 type="布尔" name="Voice">
+													<DESC></DESC>
+													<TIP></TIP>
+													<PARTS>
+														<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+														<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+													</PARTS>
+												</CONTROL>
+												<CONTROL ID=79 type="布尔" name="Map">
+													<DESC></DESC>
+													<TIP></TIP>
+													<PARTS>
+														<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
+														<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+													</PARTS>
+												</CONTROL>
+												<CONTROL ID=79 type="布尔" name="Joy">
+													<DESC></DESC>
+													<TIP></TIP>
+													<PARTS>
+														<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy/Stop</STRING></STRINGS></MLABEL></PART>
+														<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+													</PARTS>
+												</CONTROL>
+												<CONTROL ID=79 type="布尔" name="Input">
+													<DESC></DESC>
+													<TIP></TIP>
+													<PARTS>
+														<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
+														<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+													</PARTS>
+												</CONTROL>
+												<CONTROL ID=79 type="布尔" name="Undefined">
+													<DESC></DESC>
+													<TIP></TIP>
+													<PARTS>
+														<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Undefined</STRING></STRINGS></MLABEL></PART>
+														<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+													</PARTS>
+												</CONTROL>
+											</CONTENT>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="Actor_Control_reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Actor_Control_reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="用户事件引用句柄" name="stop signal">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>stop signal</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=79 type="布尔" name="stop signal">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>stop signal</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<DESC><<B>>Message Enqueuer in<</B>> specifies the reference needed to send a message to an actor.</DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>CO-STQueue</STEXT></LABEL></PART>
+			</PARTS>
+			<CONTROL ID=85 type="控件引用句柄" name="LocalGoal_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>LocalGoal_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=80 type="数值" name="z">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>z</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="y">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>y</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="x">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>x</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="P3AT_Ini_Pose_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_Ini_Pose_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="MapPositionSend_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>MapPositionSend_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="vel_cal_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>vel_cal_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="Semantic_Dialogue_Array_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_Dialogue_Array_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=82 type="数组" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<CONTROL ID=81 type="字符串" name="匹配之前">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="Semantic_DialoguePyPl_Array_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_DialoguePyPl_Array_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=100 type="自定义类型" name="">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=82 type="数组" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<CONTROL ID=81 type="字符串" name="匹配之前">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="goal_with_force_array_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>goal_with_force_array_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=82 type="数组" name="数组">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>数组</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="控件引用句柄" name="goal_with_force_Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>goal_with_force_Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=83 type="簇" name="簇">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>簇</STEXT></LABEL></PART>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+						</CONTENT>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

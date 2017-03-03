@@ -1,0 +1,44 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=55 name="CoordinatorUI.lvlib:CoordinatorUI.lvclass:Stop Core.vi">
+<TITLE><NO_TITLE name="CoordinatorUI.lvlib:CoordinatorUI.lvclass:Stop Core.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>State Pattern in</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>State Pattern out</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=80 type="数值" name="final error code">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=49 type="SubVI" name="Send Normal or Emergency Stop.vi" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<LABEL><STEXT><FONT style='B'>Code Recommended<FONT predef=APPFONT> - If you add any additional nested actors to this application, remember to add code to stop them here.</STEXT></LABEL>
+	<LABEL><STEXT>Part of stopping the application is stopping the nested actors.</STEXT></LABEL>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Stop Core.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

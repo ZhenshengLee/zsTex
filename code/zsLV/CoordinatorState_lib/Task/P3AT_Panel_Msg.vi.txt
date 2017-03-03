@@ -1,0 +1,426 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=101 name="States.lvlib:CoordinatorState.lvclass:P3AT_Panel_Msg.vi">
+<TITLE>读取模板</TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error in (no error)">
+		<DESC><<B>>错误输入<</B>>簇能够接收之前调用的VI连线传递的错误信息。当其它VI发生错误时，根据该信息可决定是否需跳过执行某些功能。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。 </DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输入（无错误）</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>布尔值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>输入用于确定错误或警告。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>字符串描述了错误或警告的来源。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>簇可将VI的错误或警告信息传递至其它VI。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>布尔值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>输入用于确定错误或警告。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>字符串描述了错误或警告的来源。<LF>
+<LF>
+弹出选项<<B>>解释错误<</B>>（或解释警告）提供了显示错误的更多信息。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CoordinatorState输入</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=100 type="自定义类型" name="值(信号)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=88 type="滑动杆" name="max_vel">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=88 type="滑动杆" name="max_rot">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=239 type="单选按钮" name="Control_Mode">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=79 type="布尔" name="Voice">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Map">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Joy">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy/Stop</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Input">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Undefined">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Ready</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>值(信号)</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Process State out</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<CONTROL ID=100 type="自定义类型" name="P3AT_Current">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=87 type="Enum" name="Control_Mode">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="now_pose_Rot_deg">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="now_pose_Y">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="now_pose_X">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="max_rot">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="max_vel">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>Joy, Map, Voice, Input, Undefined</STEXT></LABEL>
+	<LABEL><STEXT>其实本来不用自己给自己发消息，完全可以由CT-PN给它发<LF>
+现在非得把整个控件发过来然后自己给自己发，当然都可以，但是性能不一样</STEXT></LABEL>
+	<LABEL><STEXT>所以Ready状态的大多数响应函数不重写，而直接复用父类的</STEXT></LABEL>
+	<LABEL><STEXT>在任何情况下，都需要响应用户的更改模式请求，不过CO的内部状态只有三种</STEXT></LABEL>
+	<LABEL><STEXT>父类的虚函数（注意，并不是纯虚函数）<LF>
+子类不重写（覆盖）（override）时执行此函数</STEXT></LABEL>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=100 type="自定义类型" name="P3AT_Current">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=83 type="簇常量" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=87 type="Enum" name="Control_Mode">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="now_pose_Rot_deg">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="now_pose_Y">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="now_pose_X">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="max_rot">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="max_vel">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</PART>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+				<DESC></DESC>
+			</NODE>
+			<LABEL><STEXT>Undefined 就是Ready</STEXT></LABEL>
+			<NODE ID=44 type="Select">
+				<DESC></DESC>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][COOR]：准备进入JOY状态</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" name="发送Go to Manual.vi" subVIName="发送Go to Manual.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][COOR]：准备进入Map状态</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" name="发送Go to Guide.vi" subVIName="发送Go to Guide.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][COOR]：准备进入Voice状态</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" name="Send Go to Voice.vi" subVIName="Send Go to Voice.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][COOR]：准备进入Localize状态</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" name="发送Go to Localize.vi" subVIName="发送Go to Localize.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][COOR]：现在是就绪状态</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" name="Send Go to Ready.vi" subVIName="Send Go to Ready.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+			</NODE>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+		</BDCONTENT>
+		<BDCONTENT>
+		</BDCONTENT>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

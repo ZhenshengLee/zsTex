@@ -1,0 +1,93 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=10 name="Wrapper.lvlib:ActorWrapper.lvclass:ActorWrapper.ctl">
+<TITLE><NO_TITLE name="Wrapper.lvlib:ActorWrapper.lvclass:ActorWrapper.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="类私有数据的簇">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>类私有数据的簇</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=85 type="用户事件引用句柄" name="Enum">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=87 type="Enum" name="Enum">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="用户事件引用句柄" name="Stop">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=79 type="布尔" name="Stop">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="用户事件引用句柄" name="Text">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Text</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=81 type="字符串" name="Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>Text</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=85 type="用户事件引用句柄" name="Update">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=79 type="布尔" name="stop signal">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>stop signal</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

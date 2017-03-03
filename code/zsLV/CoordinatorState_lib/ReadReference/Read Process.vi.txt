@@ -1,0 +1,35 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=65 name="States.lvlib:CoordinatorState.lvclass:Read Process.vi">
+<TITLE><NO_TITLE name="States.lvlib:CoordinatorState.lvclass:Read Process.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>Returns the enqueuer for the nested Process Actor.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState out</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Process Enqueuer</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<LABEL><STEXT>是为了获得子进程的消息待入队列</STEXT></LABEL>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

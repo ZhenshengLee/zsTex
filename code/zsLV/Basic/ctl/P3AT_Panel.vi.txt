@@ -1,0 +1,94 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=8 name="P3AT_Panel.ctl">
+<TITLE><NO_TITLE name="P3AT_Panel.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="P3AT_Panel">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=25 order=0 type="修饰"><LABEL><STEXT>Ready 是 Undefined</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_Panel</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=88 type="滑动杆" name="max_vel">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=88 type="滑动杆" name="max_rot">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=239 type="单选按钮" name="Control_Mode">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=79 type="布尔" name="Voice">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="Map">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="Joy">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy/Stop</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="Input">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="Undefined">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Ready</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

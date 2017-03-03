@@ -1,0 +1,91 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=35 name="States.lvlib:CoordinatorState.lvclass:Substitute Actor.vi">
+<TITLE><NO_TITLE name="States.lvlib:CoordinatorState.lvclass:Substitute Actor.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>Filename<</B>>: Actor Framework.lvlib:Actor.lvclass:Substitute Actor.vi)<LF>
+<LF>
+This method copies information from the <<b>>Current Actor<</b>> to the <<b>>Substitute Actor<</b>>, including the to-self and the to-caller queue references. The purpose of this function is to allow an actor to define a method that replaces itself with another actor, useful for implementing a State Pattern Actor. Child classes should override this method to copy any additional fields that they need from the current to the substitute.<LF>
+<LF>
+This method may return error code 678010: Illegal substitution. Overrides of this method may choose to return this error if the new actor is not one that is an appropriate substitute for the current actor, for whatever standards of ""appropriate"" are chosen for the current actor.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Current CommonState</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Substitute Actor out</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Substitute Actor in</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>error out<</B>> passes error or warning information out of a VI to be used by other VIs.<LF>
+<LF>
+Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
+<LF>
+Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code.<LF>
+<LF>
+Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> string describes the origin of the error or warning.<LF>
+<LF>
+Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=54534344 primName="转换为特定的类">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Substitute Actor.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

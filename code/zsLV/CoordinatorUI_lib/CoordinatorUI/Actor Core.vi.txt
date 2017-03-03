@@ -1,0 +1,148 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=272 name="CoordinatorUI.lvlib:CoordinatorUI.lvclass:Actor Core.vi">
+<TITLE>State Pattern Example</TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>This is Actor Core.vi, the main message handling loop for Actors. An actor usually just sits in this loop and processes messages as they arrive. Any error returned by the message Do.vi call will stop the loop, with error code 43 as the canonical signal to stop with no error sent to caller. Descendants  may override that in Handle Error.vi.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>error in<</B>> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> describes the origin of the error or warning.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error in">
+		<DESC><<B>>error in<</B>> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error in</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> describes the origin of the error or warning.<LF>
+<LF>
+Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT>My Application</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT>Actor out</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT><FONT predef=DLGFONT>This VI uses dynamic events for App Instance Close because shared reentrant VIs should never statically register for any Application event other than Timeout. Doing so can create weird stateful behaviors that are hard to explain and, in the case of App Instance Close, can hang your application inexplicably. Search ni.com for KB on this topic.</STEXT></LABEL>
+	<NODE ID=49 type="SubVI" subVIName="Simple Error Handler.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=370 type="Merge Errors">
+		<DESC></DESC>
+	</NODE>
+	<LABEL><STEXT>The VI Properties of this VI take care of opening the panel when this VI is called and closing it again when it finishes execution. </STEXT></LABEL>
+	<LABEL><STEXT>Using the Value(Signaling) event to stop the actor loop is a technique that should only be used on actors that are primarily for user interface. See Nested Beta.lvclass:Actor Core.vi for further comments on this topic.</STEXT></LABEL>
+	<LABEL><STEXT><FONT style='B'>Code Needed<FONT predef=APPFONT> - This VI sets up two nested actors and a very simple UI for sending them a message. It also displays an event log of the actions that these actors take as they work. <LF>
+<LF>
+You may want to change the UI of this VI completely, add new messages, and possibly add an entire state machine to the while loop. </STEXT></LABEL>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Read Self Enqueuer.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Launch Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Actor Core.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

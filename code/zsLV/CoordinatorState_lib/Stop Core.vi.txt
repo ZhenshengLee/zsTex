@@ -1,0 +1,75 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=51 name="States.lvlib:CoordinatorState.lvclass:Stop Core.vi">
+<TITLE><NO_TITLE name="States.lvlib:CoordinatorState.lvclass:Stop Core.vi"></TITLE>
+<HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
+<HELP_TAG>AF_Stop_Core.html</HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>Filename<</B>>: Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)<CRLF>
+<CRLF>
+This override stops the nested Process Actor.<LF>
+<LF>
+Defines what the actor does before it stops. Use the <<B>>final error code<</B>> input to determine whether the actor shut down in response to an error.<CRLF>
+<CRLF>
+By default, this method does nothing. A descendant class may override it to define behavior, such as shutting down any processes the actor initiated in its override of the Actor Core method.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<DESC><<B>>Actor in<</B>> specifies the state of the actor after it has stopped handling messages.</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC><<B>>Actor out<</B>> returns the actor.</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState out</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=80 type="数值" name="final error code">
+		<DESC><<B>>final error code<</B>> specifies the error code, if any, that caused this actor to shut down.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=49 type="SubVI" name="Read Caller Enqueuer.vi" subVIName="Read Caller Enqueuer.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" name="产生用户事件" primID=76455546 primName="产生用户事件">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=79 type="假常量" name="event data">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Stop Core.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

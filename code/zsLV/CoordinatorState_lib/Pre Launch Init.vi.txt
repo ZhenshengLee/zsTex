@@ -1,0 +1,84 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=47 name="States.lvlib:CoordinatorState.lvclass:Pre Launch Init.vi">
+<TITLE>启动前初始化</TITLE>
+<HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
+<HELP_TAG>AF_Pre_Launch_Init.html</HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>Filename<</B>>: Actor Framework.lvlib:Actor.lvclass:Pre Launch Init.vi)<CRLF>
+<CRLF>
+Defines behavior that occurs after the  Launch Nested Actor method is invoked but before the actor's Actor Core method begins running.<CRLF>
+<CRLF>
+By default, this method does nothing. A descendant class may override it to define behavior.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>包含错误信息。该输出提供标准错误输出功能。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>的值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>是错误或警告代码。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告的源，大多数情况下表示出现错误或警告的节点名。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC><<B>>操作者输入<</B>>表示操作者。</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>操作者输入</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC><<B>>操作者输出<</B>>返回操作者。</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>操作者输出</STEXT></LABEL></PART>
+	</PARTS>
+</CONTENT>
+<BDCONTENT>
+	<CONTROL ID=79 type="假常量" name="stop signal">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=76455543 primName="创建用户事件">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=370 type="Merge Errors">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Pre Launch Init.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

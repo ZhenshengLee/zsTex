@@ -1,23 +1,24 @@
 % 页面布局
 
-\usepackage[top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm]{geometry} % 用于设置页面布局
+% \usepackage[top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm]{geometry} % 用于设置页面布局
+\usepackage[top=1.5cm,bottom=0.5cm,left=1.8cm,right=1.2cm,headsep=0.2cm]{geometry} % 用于设置页面布局
 
-% 字体和段落
+% % 字体和段落
 
-    % 章节标题显示方式
-\usepackage{titlesec, titletoc} % 设置章节标题及页眉页脚
-\titleformat{\section}{\raggedright\large\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\raggedright\normalsize\bfseries}{\thesubsection}{1em}{}
-\titlespacing{\section}{0pt}{*0}{*2}
-\titlespacing{\subsection}{0pt}{*0}{*1}
-    % 由于默认的2em缩进不够，所以我手动调整了，但是在windows下似乎2.2就差不多了，或者是article中没有这个问题
-\setlength{\parindent}{2.2em}
-    % 设置表格标题前后间距
-\setlength{\abovecaptionskip}{0pt}
-\setlength{\belowcaptionskip}{0pt}
-% \item xCJKnumb是自己额外安装的包
-% \item titleformat命令定义标题的形式
-% \item titlespacing定义标题距左、上、下的距离
+%     % 章节标题显示方式
+% \usepackage{titlesec, titletoc} % 设置章节标题及页眉页脚
+% \titleformat{\section}{\raggedright\large\bfseries}{\thesection}{1em}{}
+% \titleformat{\subsection}{\raggedright\normalsize\bfseries}{\thesubsection}{1em}{}
+% \titlespacing{\section}{0pt}{*0}{*2}
+% \titlespacing{\subsection}{0pt}{*0}{*1}
+%     % 由于默认的2em缩进不够，所以我手动调整了，但是在windows下似乎2.2就差不多了，或者是article中没有这个问题
+% \setlength{\parindent}{2.2em}
+%     % 设置表格标题前后间距
+% \setlength{\abovecaptionskip}{0pt}
+% \setlength{\belowcaptionskip}{0pt}
+% % \item xCJKnumb是自己额外安装的包
+% % \item titleformat命令定义标题的形式
+% % \item titlespacing定义标题距左、上、下的距离
 
     % 字体设置
 \usepackage{xeCJK}  % 用于使用本地字体
@@ -56,7 +57,7 @@
     % 页眉页脚页码
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{软件名称}
+\lhead{移动机器人远程人机交互平台软件 V1.0    源代码}
 \rhead{\thepage}
 
     % 表格和图片
@@ -72,24 +73,31 @@
 \usepackage{footnote}   % 增强的脚注功能，可添加表格脚注
 \usepackage{threeparttable} % 添加真正的表格脚注,示例见README
 \usepackage{hyperref}   % 添加pdf书签
-\usepackage{listings}   % 添加代码高亮
+
 
 % 目录和文献
 
 \usepackage[super, square, sort&compress]{natbib}   % 处理参考文献
 
-
-
-
-
-
-% 代码格式自定义
+% 代码格式
+\usepackage{listings}   % 添加代码高亮
 \lstset{
-    basicstyle=\sffamily,
-    keywordstyle=\bfseries,
-    commentstyle=\rmfamily\itshape,
-    stringstyle=\ttfamily
+	basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+	numbers=left,                   % where to put the line-numbers
+	numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+	numberstyle=\tiny,
+	stepnumber=5,                  % the step between two line-numbers. If it is 1 each line will be numbered
+	numbersep=5pt,                  % how far the line-numbers are from the code
+	% showspaces=false,               % show spaces adding particular underscores
+	% showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	% frame=single,           		% adds a frame around the code
+	tabsize=1,          			% sets default tabsize to 2 spaces
+	breaklines=true,       			% sets automatic line breaking
+	postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}},
+	showlines=true
 }
+
 
 % 命令重定义 
 % \renewcommand{\refname}{\bfseries{参~考~文~献}} %将Reference改为参考文献（用于 article）

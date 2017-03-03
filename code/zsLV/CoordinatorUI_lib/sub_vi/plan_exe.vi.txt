@@ -1,0 +1,19 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=1 name="plan_exe.vi">
+<TITLE><NO_TITLE name="plan_exe.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+</CONTENT>
+<BDCONTENT>
+	<LABEL><STEXT>输入为规划好的序列，协调者负责执行<LF>
+<LF>
+输入至少为：当前点，控制模式，move_base状态等</STEXT></LABEL>
+</BDCONTENT>
+</VI>
+
+

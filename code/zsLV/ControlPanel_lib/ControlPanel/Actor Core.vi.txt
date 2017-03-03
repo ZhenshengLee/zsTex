@@ -1,0 +1,1762 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=328 name="ControlPanel.lvlib:ControlPanel.lvclass:Actor Core.vi">
+<TITLE>CONTROL-PANEL</TITLE>
+<HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
+<HELP_TAG>AF_Actor_Core.html</HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>文件名<</B>>：Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)<CRLF>
+<CRLF>
+接收发送至操作者的消息，响应消息并处理可能导致操作者关闭的错误。<CRLF>
+<CRLF>
+子孙类重写该VI，使操作者完成特定的任务。使用调用父方法节点实现重写。</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>包含错误信息。该输出提供标准错误输出功能。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>的值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>是错误或警告代码。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告的源，大多数情况下表示出现错误或警告的节点名。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error in">
+		<DESC><<B>>错误输入<</B>>表明节点运行前发生的错误。该输入提供标准错误输入。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输入</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。<LF>
+<LF>
+关于错误的更多信息，请右键单击前面板上的<<B>>错误输入<</B>>输入控件，并从快捷菜单中选择<<B>>解释错误<</B>>或<<B>>解释警告<</B>>。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>表示错误或警告代码。<LF>
+<LF>
+关于错误的更多信息，请右键单击前面板上的<<B>>错误输入<</B>>输入控件，并从快捷菜单中选择<<B>>解释错误<</B>>或<<B>>解释警告<</B>>。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告源。<LF>
+<LF>
+关于错误的更多信息，请右键单击前面板上的<<B>>错误输入<</B>>输入控件，并从快捷菜单中选择<<B>>解释错误<</B>>或<<B>>解释警告<</B>>。</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC><<B>>操作者输入<</B>>指定操作者启动后操作者的状态。</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>操作者输入</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT>操作者输出</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=79 type="布尔" name="停止信号">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>停止信号</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="P3AT_Panel">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=88 type="滑动杆" name="max_vel">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=88 type="滑动杆" name="max_rot">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=239 type="单选按钮" name="Control_Mode">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=79 type="布尔" name="Voice">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Map">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>MapGuide</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Joy">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Input">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Localizing</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=79 type="布尔" name="Undefined">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Ready/stop</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_Panel</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="组件管理">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=79 type="布尔" name="JoyStick">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=DLGFONT color=100003D><STRINGS><STRING>JoyStick</STRING></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>JoyStick</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="布尔" name="DNL_Stop">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=SYSFONT color=FF0000><STRINGS><STRING>停止程序</STRING></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT color=FF0000>DNL_Stop</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="布尔" name="RemoteP3AT">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=SYSFONT><STRINGS><STRING>RemoteP3AT</STRING></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>RemoteP3AT</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>组件管理</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="sensor">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>sensor</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="motor">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>motor</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=89 type="仪表" name="voltage">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>voltage</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=81 type="字符串" name="事件记录">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT><FONT predef=SYSFONT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=SYSFONT>事件记录</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><SAME_AS_LABEL></DEFAULT>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="XBOX_Control">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=100 type="自定义类型" name="Buttons">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=83 type="簇" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+											<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+										</PARTS>
+										<CONTENT>
+											<GROUPER>
+												<PARTS>
+												</PARTS></GROUPER>
+											<CONTROL ID=100 type="自定义类型" name="A">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="B">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="X">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Y">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="View Button">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Menu Button">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Left Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Right Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Left Bumper">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Right Bumper">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="布尔" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+										</CONTENT>
+									</CONTROL>
+								</PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Buttons</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=100 type="自定义类型" name="All Axis">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=83 type="簇" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+											<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+										</PARTS>
+										<CONTENT>
+											<GROUPER>
+												<PARTS>
+												</PARTS></GROUPER>
+											<CONTROL ID=83 type="簇" name="Left Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Left Stick</STEXT></LABEL></PART>
+												</PARTS>
+												<CONTENT>
+													<GROUPER>
+														<PARTS>
+														</PARTS></GROUPER>
+													<CONTROL ID=80 type="数值" name="Y Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=82 order=0 type="标题"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=80 type="数值" name="X Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=82 order=0 type="标题"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
+														</PARTS>
+													</CONTROL>
+												</CONTENT>
+											</CONTROL>
+											<CONTROL ID=83 type="簇" name="Right Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Right Stick</STEXT></LABEL></PART>
+												</PARTS>
+												<CONTENT>
+													<GROUPER>
+														<PARTS>
+														</PARTS></GROUPER>
+													<CONTROL ID=80 type="数值" name="Y Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=82 order=0 type="标题"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=80 type="数值" name="X Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=82 order=0 type="标题"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
+														</PARTS>
+													</CONTROL>
+												</CONTENT>
+											</CONTROL>
+											<CONTROL ID=80 type="数值" name="Triggers">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>Triggers</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="D-Pad">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=87 type="Enum" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+													<PART ID=82 order=0 type="标题"><LABEL><STEXT>D-Pad</STEXT></LABEL></PART>
+												</PARTS>
+											</CONTROL>
+										</CONTENT>
+									</CONTROL>
+								</PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>All Axis</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>XBOX_Control</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="P3AT_InputCMD">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=81 type="字符串" name="StartPoint">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>StartPoint</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="EndPoint">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>EndPoint</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="Action">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Action</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="Direction">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Direction</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="Distance">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Distance</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="Velocity">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Velocity</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串" name="Assurance/Yes">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Assurance/Yes</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_InputCMD</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>此前面板是主要的人机交互界面<LF>
+监管者可以使用标准输入设备进行控制<LF>
+主要的信息显示将转移到“协调者”和“地图显示器”的前面板</STEXT></LABEL>
+	<LABEL><STEXT>改变才发送<LF>
+所以必须有默认值</STEXT></LABEL>
+	<LABEL><STEXT>语音模式操作指南<LF>
+在手机上先点“开启广播”，然后再点“获取数据”<LF>
+再按“添加语音”</STEXT></LABEL>
+	<LABEL><STEXT>机器人配置信息包括：<LF>
+当前线速度；最大线速度；<LF>
+当前角速度；最大角速度；<LF>
+出生坐标（x,y,rot）；</STEXT></LABEL>
+	<CONTROL ID=100 type="自定义类型" name="Semantic_Voice_Array">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=82 type="数组" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<DEFAULT>
+						<ARRAY nElems=0>
+						</ARRAY>
+					</DEFAULT>
+					<CONTENT>
+						<CONTROL ID=81 type="字符串" name="匹配之前">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_Voice_Array</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>下一个版本中加入此功能，文字对话功能，应该设置为枚举值<LF>
+最后一个布尔值确认发送</STEXT></LABEL>
+	<CONTROL ID=100 type="自定义类型" name="手动定位">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=79 type="布尔" name="Send">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>更新</STRING></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Send</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="Ini_pose_Rot_deg">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="Ini_pose_Y">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="Ini_pose_X">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="布尔" name="Return">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING>恢复</STRING></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>Return</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>手动定位</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="布尔" name="Global_Planner_Recyle">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Global_Planner_Recyle</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="Semantic_Dialogue_Array">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=82 type="数组" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<DEFAULT>
+						<ARRAY nElems=0>
+						</ARRAY>
+					</DEFAULT>
+					<CONTENT>
+						<CONTROL ID=81 type="字符串" name="匹配之前">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_Dialogue_Array</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="Semantic_DialoguePYPL_Array">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=82 type="数组" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<DEFAULT>
+						<ARRAY nElems=0>
+						</ARRAY>
+					</DEFAULT>
+					<CONTENT>
+						<CONTROL ID=81 type="字符串" name="匹配之前">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>匹配之前</STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Semantic_DialoguePYPL_Array</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=79 type="假常量" >
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+			</PARTS>
+		</BDCONTENT>
+		<BDCONTENT>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+			</PARTS>
+		</BDCONTENT>
+	</NODE>
+	<CONTROL ID=100 type="自定义类型" name="值(信号)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=79 type="假常量" name="Return">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="Send">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="Ini_pose_Rot_deg">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="Ini_pose_Y">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="Ini_pose_X">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=140 type="Property Node" name="P3AT_Ini_Pose_send">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=100 type="自定义类型" name="P3AT_Panel">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=87 type="Enum" name="Control_Mode">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="max_rot">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="max_vel">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=100 type="自定义类型" name="XBOX_Control 2">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=100 type="自定义类型" name="All Axis">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=83 type="簇常量" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+										</PARTS>
+										<CONTENT>
+											<GROUPER>
+												<PARTS>
+												</PARTS></GROUPER>
+											<CONTROL ID=100 type="自定义类型" name="D-Pad">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=87 type="Enum" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+																<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=80 type="数值常量" name="Triggers">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=83 type="簇常量" name="Right Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+												<CONTENT>
+													<GROUPER>
+														<PARTS>
+														</PARTS></GROUPER>
+													<CONTROL ID=80 type="数值常量" name="Y Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=80 type="数值常量" name="X Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+												</CONTENT>
+											</CONTROL>
+											<CONTROL ID=83 type="簇常量" name="Left Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+												<CONTENT>
+													<GROUPER>
+														<PARTS>
+														</PARTS></GROUPER>
+													<CONTROL ID=80 type="数值常量" name="Y Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=80 type="数值常量" name="X Axis">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+												</CONTENT>
+											</CONTROL>
+										</CONTENT>
+									</CONTROL>
+								</PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=100 type="自定义类型" name="Buttons">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=83 type="簇常量" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+										</PARTS>
+										<CONTENT>
+											<GROUPER>
+												<PARTS>
+												</PARTS></GROUPER>
+											<CONTROL ID=100 type="自定义类型" name="Right Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Left Stick">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Menu Button">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="View Button">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Right Bumper">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Left Bumper">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="Y">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="X">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="B">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=100 type="自定义类型" name="A">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=8010 order=0 type="自定义类型控件">
+														<CONTROL ID=79 type="假常量" name="">
+															<DESC></DESC>
+															<TIP></TIP>
+															<PARTS>
+															</PARTS>
+														</CONTROL>
+													</PART>
+												</PARTS>
+											</CONTROL>
+										</CONTENT>
+									</CONTROL>
+								</PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=182 type="CtlRefConst" name="XBOX_Control">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=260 type="Object Method SubVI" subVIName="ReadStop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=140 type="Property Node" name="P3AT_Panel">
+		<DESC></DESC>
+	</NODE>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<CONTROL ID=100 type="自定义类型" name="Actor_Control 2">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=79 type="假常量" name="DNL_Stop">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="RemoteP3AT">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="JoyStick">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=140 type="Property Node" name="Actor_Control">
+		<DESC></DESC>
+	</NODE>
+	<LABEL><STEXT>人机交互</STEXT></LABEL>
+	<LABEL><STEXT>此处应该有分析<LF>
+分析之后对用户事件信号量置位<LF>
+置位后通过下面的事件结构来显示出信息</STEXT></LABEL>
+	<NODE ID=49 type="SubVI" name="Read Self Enqueuer.vi" subVIName="Read Self Enqueuer.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" name="Read Caller Enqueuer.vi" subVIName="Read Caller Enqueuer.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=235 type="Register For Events">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=49 type="SubVI" name="发送XBOX_Control_Msg.vi" subVIName="发送XBOX_Control_Msg.vi">
+				<DESC></DESC>
+			</NODE>
+			<LABEL><STEXT>发给COST响应</STEXT></LABEL>
+			<NODE ID=47 type="Function" primID=564C4F54 primName="变体至数据转换">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=79 type="假常量" >
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+				</BDCONTENT>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" name="等待时间（毫秒）">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=54494157 primName="等待(ms)">
+				<DESC></DESC>
+			</NODE>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>Send to CO_ST</STEXT></LABEL></PART>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<LABEL><STEXT>这里对所有的消息进行初始化</STEXT></LABEL>
+	<LABEL><STEXT>此处启动子操作者</STEXT></LABEL>
+	<LABEL><STEXT>数据引用区域<LF>
+所有的数据根据需要<LF>
+到达右边的数据处理区域</STEXT></LABEL>
+	<LABEL><STEXT>这个区域放置所有的消息数据结构<LF>
+消息数据结构需要合理规划<LF>
+避免过于松散或繁杂</STEXT></LABEL>
+	<LABEL><STEXT>这个事件结构用来响应主面板上的按钮<LF>
+主操作者面板上只需要少量按钮</STEXT></LABEL>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=79 type="假常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="假常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" name="y">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=20205145 primName="等于？">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=99 type="(Un)Bundle by Name">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=100 type="自定义类型" name="P3AT_Panel">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=83 type="簇常量" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=87 type="Enum" name="Control_Mode">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="max_rot">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="max_vel">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</PART>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=140 type="Property Node" name="P3AT_Panel">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=79 type="假常量" >
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+				</BDCONTENT>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" name="等待时间（毫秒）">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=54494157 primName="等待(ms)">
+				<DESC></DESC>
+			</NODE>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>P3AT_Panel一方面受用户控制，一方面受程序内部控制，现在只有CO_ST，在Guiding模式下收到手柄消息，则自动切换到Manual模式，此时人机界面也应该同步变化</STEXT></LABEL></PART>
+		</BDCONTENT>
+	</NODE>
+	<LABEL><STEXT>上面的所有线程均各自循环，定时发送所有消息<LF>
+消息的发送者和接收者，设计人员需要明确</STEXT></LABEL>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=45465255 primName="取消注册事件">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Simple Error Handler.vi">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=81 type="字符串常量" name="Unlocalized">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><STRING>Event Log</STRING></DEFAULT>
+	</CONTROL>
+	<LABEL><STEXT>只有对主要用于用户界面的操作者，才可通过值（信号）事件使操作者循环停止运行。关于该问题的更多注释见Nested Beta.lvclass:Actor Core.vi。</STEXT></LABEL>
+	<NODE ID=41 type="Sequence">
+		<DESC></DESC>
+		<BDCONTENT>
+			<LABEL><STEXT>即使出错也执行。</STEXT></LABEL>
+			<CONTROL ID=79 type="假常量" name="stop">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=140 type="Property Node" name="停止信号">
+				<DESC></DESC>
+			</NODE>
+		</BDCONTENT>
+	</NODE>
+	<CONTROL ID=79 type="假常量" name="stop">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=140 type="Property Node" name="停止信号">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=80 type="数值常量" name="Text.Scroll Position">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<NODE ID=140 type="Property Node" name="事件记录">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+					<NODE ID=49 type="SubVI" subVIName="Send Normal Stop.vi">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=49 type="SubVI" subVIName="Send Normal Stop.vi">
+						<DESC></DESC>
+					</NODE>
+					<LABEL><STEXT>用户已经按下“停止”按钮或单击关闭窗口，但该事件帧未对“停止”布尔控件返回“真”。反而将“停止”消息发送给操作者。当操作者实际执行完成时，将通过触发“停止信号”控件的“值（信号）”方法来关闭该循环。这样做可以确保无论通过UI，还是通过错误处理分支，均由同一个信号触发循环停止；如有必要，此处可以添加清除对话框时必须执行的任何代码。</STEXT></LABEL>
+				</BDCONTENT>
+				<BDCONTENT>
+					<LABEL><STEXT>使用通知器停止<LF>
+其他发送消息循环</STEXT></LABEL>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=44 type="Select">
+						<DESC></DESC>
+						<BDCONTENT>
+							<NODE ID=49 type="SubVI" subVIName="Send Normal Stop.vi">
+								<DESC></DESC>
+							</NODE>
+						</BDCONTENT>
+						<BDCONTENT>
+							<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+								<DESC></DESC>
+								<TIP></TIP>
+								<PARTS>
+								</PARTS>
+							</CONTROL>
+							<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+								<DESC></DESC>
+							</NODE>
+						</BDCONTENT>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=81 type="字符串常量" name="Event Text">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+						</PARTS>
+						<DEFAULT><STRING>[INFO][PANEL-->>COOR]：发送状态更改消息...</STRING></DEFAULT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" name="发送Log Event.vi" subVIName="发送Log Event.vi">
+						<DESC></DESC>
+					</NODE>
+					<LABEL><STEXT>Mode</STEXT></LABEL>
+					<LABEL><STEXT>Joy-Joy<LF>
+Map-MapGuide<LF>
+Voice-Voice<LF>
+Input-Localizing<LF>
+Undefined-Ready</STEXT></LABEL>
+					<NODE ID=49 type="SubVI" name="发送P3AT_Panel_Msg.vi" subVIName="发送P3AT_Panel_Msg.vi">
+						<DESC></DESC>
+					</NODE>
+					<LABEL><STEXT>发过去给COST响应，三个状态响应不一样</STEXT></LABEL>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=99 type="(Un)Bundle by Name">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=99 type="(Un)Bundle by Name">
+						<DESC></DESC>
+					</NODE>
+					<CONTROL ID=83 type="簇常量" name="P3AT_Ini_Pose">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+						<CONTENT>
+							<GROUPER>
+								<PARTS>
+								</PARTS></GROUPER>
+							<CONTROL ID=80 type="数值常量" name="Ini_pose_Rot_deg">
+								<DESC></DESC>
+								<TIP></TIP>
+								<PARTS>
+								</PARTS>
+							</CONTROL>
+							<CONTROL ID=80 type="数值常量" name="Ini_pose_Y">
+								<DESC></DESC>
+								<TIP></TIP>
+								<PARTS>
+								</PARTS>
+							</CONTROL>
+							<CONTROL ID=80 type="数值常量" name="Ini_pose_X">
+								<DESC></DESC>
+								<TIP></TIP>
+								<PARTS>
+								</PARTS>
+							</CONTROL>
+						</CONTENT>
+					</CONTROL>
+					<NODE ID=49 type="SubVI" name="发送P3AT_Ini_Pose_Msg.vi" subVIName="发送P3AT_Ini_Pose_Msg.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=100 type="自定义类型" name="值(信号)">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇常量" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=79 type="假常量" name="Return">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=79 type="假常量" name="Send">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值常量" name="Ini_pose_Rot_deg">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值常量" name="Ini_pose_Y">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值常量" name="Ini_pose_X">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值常量" name="Ini_pose_Rot_deg">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值常量" name="Ini_pose_Y">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=80 type="数值常量" name="Ini_pose_X">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+					<NODE ID=99 type="(Un)Bundle by Name">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=140 type="Property Node" name="P3AT_Ini_Pose_send">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=49 type="SubVI" name="发送Semantic_Voice_Array_Msg.vi" subVIName="发送Semantic_Voice_Array_Msg.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=49 type="SubVI" name="发送Semantic_Dialogue_Array_Msg.vi" subVIName="发送Semantic_Dialogue_Array_Msg.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=49 type="SubVI" name="发送Semantic_DialoguePyPl_Array_Msg.vi" subVIName="发送Semantic_DialoguePyPl_Array_Msg.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+			</NODE>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" name="Actor Core.vi" subVIName="Actor Core.vi">
+		<DESC></DESC>
+	</NODE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>JOY</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>CO_ST</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>CT_PN</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>VOICE</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>事件结构</STEXT></LABEL></PART>
+	</WIRE>
+</BDCONTENT>
+</VI>
+
+

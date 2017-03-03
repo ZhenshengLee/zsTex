@@ -1,0 +1,69 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=26 name="CoordinatorUI.lvlib:CoordinatorUI.lvclass:CoordinatorUI.ctl">
+<TITLE><NO_TITLE name="CoordinatorUI.lvlib:CoordinatorUI.lvclass:CoordinatorUI.ctl"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="Cluster of class private data">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=25 order=0 type="修饰"><LABEL><STEXT>The Configuration Settings is not a typedef because it is never meant to be manipulated as a single element. The containment of these elements as a cluster is merely a convenience to show which fields come from the config file versus fields that are part of the application's running state.</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Cluster of class private data</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+				<PART ID=82 order=0 type="标题"><LABEL><STEXT>Process State Queue</STEXT></LABEL></PART>
+			</PARTS>
+			<CONTROL ID=85 type="控件引用句柄" name="Event Log Reference">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Event Log Reference</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<CONTROL ID=81 type="字符串" name="String">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>String</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=83 type="簇" name="DNL_Configuration Settings">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>DNL_Configuration Settings</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=80 type="数值" name="Integer">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>Integer</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+</BDCONTENT>
+</VI>
+
+

@@ -1,0 +1,732 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=37 name="Relative2Absolute.vi">
+<TITLE><NO_TITLE name="Relative2Absolute.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="机器人语音指令数据簇">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>机器人语音指令数据簇</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=81 type="字符串" name="速度">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>速度</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="距离">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>距离</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="方向">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>方向</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="动作">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>动作</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="终点">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>终点</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="起点">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>起点</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="x">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>x</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="y">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>y</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="Rot_deg">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Rot_deg</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="f">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>f</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="now_pose_X">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>now_pose_X</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="now_pose_Y">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>now_pose_Y</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="now_pose_Rot_deg">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>now_pose_Rot_deg</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="y">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="y">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+	</NODE>
+	<CONTROL ID=81 type="字符串常量" name="搜索字符串">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><STRING>厘米</STRING></DEFAULT>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=204C554D primName="乘">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=54535253 primName="搜索替换字符串">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="f">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="f">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="f">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+		<BDCONTENT>
+			<NODE ID=47 type="Function" primID=20234425 primName="十进制数字符串至数值转换">
+				<DESC></DESC>
+			</NODE>
+		</BDCONTENT>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+		</BDCONTENT>
+	</NODE>
+	<LABEL><STEXT>不知道条件结构支不支持正则表达式</STEXT></LABEL>
+	<CONTROL ID=81 type="字符串常量" name="y">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><STRING>__</STRING></DEFAULT>
+	</CONTROL>
+	<LABEL><STEXT>当解析“继续”时,向左等不提供距离参数的命令时，使用默认距离1m<LF>
+Mathscript使用弧度计算三角函数</STEXT></LABEL>
+	<NODE ID=192 type="Expression Node" name="radians to degrees">
+		<DESC></DESC>
+	</NODE>
+	<PART ID=65 order=0 type="单位标签"><LABEL><STEXT>(x/pi)*180.0</STEXT></LABEL></PART>
+	<NODE ID=192 type="Expression Node" name="degrees to radians">
+		<DESC></DESC>
+	</NODE>
+	<PART ID=65 order=0 type="单位标签"><LABEL><STEXT>(x/180.0)*pi</STEXT></LABEL></PART>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+		</BDCONTENT>
+		<BDCONTENT>
+			<NODE ID=298 type="MathScript Node">
+				<DESC></DESC>
+			</NODE>
+			<BDCONTENT>
+				<CONTROL ID=83 type="簇常量" name="error out">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=81 type="字符串常量" name="source">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="code">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="status">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+				<NODE ID=49 type="SubVI" subVIName="NIMS_Finalize Error.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=44 type="Select">
+					<DESC></DESC>
+					<BDCONTENT>
+					</BDCONTENT>
+					<BDCONTENT>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204E4953 primName="正弦">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20534F43 primName="余弦">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+					</BDCONTENT>
+				</NODE>
+			</BDCONTENT>
+		</BDCONTENT>
+		<BDCONTENT>
+			<NODE ID=298 type="MathScript Node">
+				<DESC></DESC>
+			</NODE>
+			<BDCONTENT>
+				<CONTROL ID=83 type="簇常量" name="error out">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=81 type="字符串常量" name="source">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="code">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="status">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+				<NODE ID=49 type="SubVI" subVIName="NIMS_Finalize Error.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=44 type="Select">
+					<DESC></DESC>
+					<BDCONTENT>
+					</BDCONTENT>
+					<BDCONTENT>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<NODE ID=47 type="Function" primID=20425553 primName="减">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204E4953 primName="正弦">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<NODE ID=47 type="Function" primID=20425553 primName="减">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20534F43 primName="余弦">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+					</BDCONTENT>
+				</NODE>
+			</BDCONTENT>
+		</BDCONTENT>
+		<BDCONTENT>
+			<NODE ID=298 type="MathScript Node">
+				<DESC></DESC>
+			</NODE>
+			<BDCONTENT>
+				<CONTROL ID=83 type="簇常量" name="error out">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=81 type="字符串常量" name="source">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="code">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="status">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+				<NODE ID=49 type="SubVI" subVIName="NIMS_Finalize Error.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=44 type="Select">
+					<DESC></DESC>
+					<BDCONTENT>
+					</BDCONTENT>
+					<BDCONTENT>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204E4953 primName="正弦">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20534F43 primName="余弦">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+					</BDCONTENT>
+				</NODE>
+			</BDCONTENT>
+		</BDCONTENT>
+		<BDCONTENT>
+			<NODE ID=298 type="MathScript Node">
+				<DESC></DESC>
+			</NODE>
+			<BDCONTENT>
+				<CONTROL ID=83 type="簇常量" name="error out">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=81 type="字符串常量" name="source">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="code">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="status">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+				<NODE ID=49 type="SubVI" subVIName="NIMS_Finalize Error.vi">
+					<DESC></DESC>
+				</NODE>
+				<NODE ID=44 type="Select">
+					<DESC></DESC>
+					<BDCONTENT>
+					</BDCONTENT>
+					<BDCONTENT>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=359 type="GenericSubVI" subVIName="NIMS_NodeEndStatement_Output.vi">
+							<DESC></DESC>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20425553 primName="减">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204E4953 primName="正弦">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20425553 primName="减">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+						<NODE ID=44 type="Select">
+							<DESC></DESC>
+							<BDCONTENT>
+							</BDCONTENT>
+							<BDCONTENT>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<NODE ID=47 type="Function" primID=20444441 primName="加">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=204C554D primName="乘">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20534F43 primName="余弦">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20425553 primName="减">
+									<DESC></DESC>
+								</NODE>
+								<NODE ID=47 type="Function" primID=20564944 primName="除">
+									<DESC></DESC>
+								</NODE>
+							</BDCONTENT>
+						</NODE>
+					</BDCONTENT>
+				</NODE>
+			</BDCONTENT>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

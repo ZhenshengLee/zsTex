@@ -1,0 +1,85 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=3 name="Write_var.vi">
+<TITLE><NO_TITLE name="Write_var.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=80 type="数值" name="Global_Planner_Recyle">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Global_Planner_Recyle</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值" name="Global_Planner_Recyle 2">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Global_Planner_Recyle 2</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="布尔" name="停止">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>停止</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>停止</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="布尔" name="停止 2">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=22 order=0 type="布尔文本"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>停止</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>停止 2</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="等待时间（毫秒）">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=54494157 primName="等待(ms)">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+				<DESC></DESC>
+			</NODE>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<CONTROL ID=80 type="数值常量" name="等待时间（毫秒）">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=54494157 primName="等待(ms)">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+					<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+			</NODE>
+		</BDCONTENT>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

@@ -1,0 +1,485 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=169 name="States.lvlib:CoordinatorState.lvclass:Actor Core.vi">
+<TITLE>States.lvlib:CoordinatorState.lvclass:Actor Core.vi</TITLE>
+<HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
+<HELP_TAG>AF_Actor_Core.html</HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>Filename<</B>>: Actor Framework.lvlib:Actor.lvclass:Actor Core.vi)<CRLF>
+<LF>
+<CR>
+This override launches an instance of Process Actor.lvclass.<LF>
+<LF>
+Receives messages to the actor, reacts to them, and initiates any error handling that may shut the actor down.<CRLF>
+<CRLF>
+Descendant classes may override this VI to append parallel tasks for the actor to complete while it handles messages. Overrides use the Call Parent Method node.</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>error out<</B>> contains error information. This output provides standard error out functionality.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> describes the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error in">
+		<DESC><<B>>error in<</B>> describes error conditions that occur before this node runs. This input provides standard error in functionality.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>error in</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred before this node ran or FALSE (checkmark) to indicate a warning or that no error occurred before this node ran. The default is FALSE.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>status</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code. The default is 0.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>code</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> specifies the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning. The default is an empty string.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>source</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<DESC><<B>>Actor in<</B>> specifies the state of the actor after it has launched.</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC><<B>>Actor out<</B>> returns the state of the actor after it has shut down.</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>Actor out</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=79 type="布尔" name="停止信号">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>停止信号</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="sensor">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>sensor</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="motor">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>motor</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="voltage">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>voltage</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="robot position">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=80 type="数值" name="global x">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="global y">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="global z">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>global z</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name=" floor NO.">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT> floor NO.</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值" name="global_rot">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>robot position</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="P3AT_Ini_Pose">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>P3AT_Ini_Pose</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="Ini_pose_Rot_deg">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="Ini_pose_Y">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="Ini_pose_X">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="MapPosition">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>MapPosition</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="Send">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>Send</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="global_rot">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="global y">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="global x">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="vel_cal">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>vel_cal</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="rot_z">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="lin_x">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<CONTROL ID=79 type="假常量" >
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=44 type="Select">
+		<DESC></DESC>
+		<BDCONTENT>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+			</PARTS>
+		</BDCONTENT>
+		<BDCONTENT>
+			<DESC></DESC>
+			<TIP></TIP>
+			<PARTS>
+			</PARTS>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst" name="vel_cal">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>保证事件结构有效</STEXT></LABEL>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst" name="robot position">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst" name="sensor">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=182 type="CtlRefConst">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Read Self Enqueuer.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=49 type="SubVI" name="发送vel_cal_Reference.vi" subVIName="发送vel_cal_Reference.vi">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=49 type="SubVI" name="发送Task_robot_position_Reference.vi" subVIName="发送Task_robot_position_Reference.vi">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=49 type="SubVI" name="发送Sensor_Msg.vi" subVIName="发送Sensor_Msg.vi">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" >
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+				</BDCONTENT>
+				<BDCONTENT>
+					<CONTROL ID=79 type="假常量" >
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+						</PARTS>
+					</CONTROL>
+				</BDCONTENT>
+			</NODE>
+			<CONTROL ID=80 type="数值常量" name="等待时间（毫秒）">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<NODE ID=47 type="Function" primID=54494157 primName="等待(ms)">
+				<DESC></DESC>
+			</NODE>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>接受来自RemoteP3AT的传感器信息，并默认转发给CT-PN 和 MAP（周期性消息，50ms）</STEXT></LABEL></PART>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=33 type="While Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=213 type="Event Struct">
+				<DESC></DESC>
+				<BDCONTENT>
+					<LABEL><STEXT>用户已经按下“停止”按钮或单击关闭窗口，但该事件帧未对“停止”布尔控件返回“真”。反而将“停止”消息发送给操作者。当操作者实际执行完成时，将通过触发“停止信号”控件的“值（信号）”方法来关闭该循环。这样做可以确保无论通过UI，还是通过错误处理分支，均由同一个信号触发循环停止；如有必要，此处可以添加清除对话框时必须执行的任何代码。</STEXT></LABEL>
+				</BDCONTENT>
+				<BDCONTENT>
+					<LABEL><STEXT>使用通知器停止<LF>
+其他发送消息循环</STEXT></LABEL>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=140 type="Property Node" name="停止信号">
+						<DESC></DESC>
+					</NODE>
+				</BDCONTENT>
+			</NODE>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>响应关于模式转换的按键消息，以及负责停止（基于值改变的时间，必须赋初值，不然可能不会触发事件）</STEXT></LABEL></PART>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=235 type="Register For Events">
+		<DESC></DESC>
+	</NODE>
+	<LABEL><STEXT>当有多个模式时，需要考虑模式间切换时的动作</STEXT></LABEL>
+	<LABEL><STEXT>先把Ready模式搞定，再搞定voice模式，其他先不管</STEXT></LABEL>
+	<LABEL><STEXT>这里负责处理P3-AT消息和ActorControl消息<LF>
+主要有：最大速度修改，模式切换，其他的消息处理在Task函数中转发</STEXT></LABEL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<DESC></DESC>
+	<TIP></TIP>
+	<PARTS>
+	</PARTS>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Launch Nested Actor.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" name="Actor Core.vi" subVIName="Actor Core.vi">
+		<DESC></DESC>
+	</NODE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>CT-PN</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT>MAP</STEXT></LABEL></PART>
+	</WIRE>
+</BDCONTENT>
+</VI>
+
+
