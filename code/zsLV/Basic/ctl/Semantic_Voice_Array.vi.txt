@@ -7,23 +7,23 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=82 type=" ˝◊È" name="Semantic_Voice_Array">
+	<CONTROL ID=82 type="Êï∞ÁªÑ" name="Semantic_Voice_Array">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Semantic_Voice_Array</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Semantic_Voice_Array</STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT>
 			<ARRAY nElems=0>
 			</ARRAY>
 		</DEFAULT>
 		<CONTENT>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="∆•≈‰÷Æ«∞">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="ÂåπÈÖç‰πãÂâç">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>∆•≈‰÷Æ«∞</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÂåπÈÖç‰πãÂâç</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>

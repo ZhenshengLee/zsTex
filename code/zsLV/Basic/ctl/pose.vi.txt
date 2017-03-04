@@ -7,85 +7,85 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="Pose">
+	<CONTROL ID=83 type="ç°‡" name="Pose">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Pose</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Pose</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=83 type="´Ø" name="Quaternion">
+			<CONTROL ID=83 type="ç°‡" name="Quaternion">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Quaternion</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Quaternion</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
 					<GROUPER>
 						<PARTS>
 						</PARTS></GROUPER>
-					<CONTROL ID=80 type="ÊýÖµ" name="w">
+					<CONTROL ID=80 type="æ•°å€¼" name="w">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>w</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>w</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=80 type="ÊýÖµ" name="z">
+					<CONTROL ID=80 type="æ•°å€¼" name="z">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>z</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>z</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=80 type="ÊýÖµ" name="y">
+					<CONTROL ID=80 type="æ•°å€¼" name="y">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>y</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>y</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=80 type="ÊýÖµ" name="x">
+					<CONTROL ID=80 type="æ•°å€¼" name="x">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>x</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>x</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>
 			</CONTROL>
-			<CONTROL ID=83 type="´Ø" name="Point">
+			<CONTROL ID=83 type="ç°‡" name="Point">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Point</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Point</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
 					<GROUPER>
 						<PARTS>
 						</PARTS></GROUPER>
-					<CONTROL ID=80 type="ÊýÖµ" name="z">
+					<CONTROL ID=80 type="æ•°å€¼" name="z">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>z</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>z</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=80 type="ÊýÖµ" name="y">
+					<CONTROL ID=80 type="æ•°å€¼" name="y">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>y</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>y</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=80 type="ÊýÖµ" name="x">
+					<CONTROL ID=80 type="æ•°å€¼" name="x">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>x</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>x</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>

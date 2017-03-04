@@ -7,35 +7,35 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="P3AT_Ini_Pose">
+	<CONTROL ID=83 type="ç°‡" name="P3AT_Ini_Pose">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>P3AT_Ini_Pose</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>P3AT_Ini_Pose</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_X">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_X">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_Y">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Y">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_Rot_deg">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Rot_deg">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>

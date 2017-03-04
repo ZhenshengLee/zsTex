@@ -1,5 +1,5 @@
 <VI syntaxVersion=11 LVversion=14008000 revision=67 name="ControlPanel.lvlib:ControlPanel.lvclass:Pre Launch Init.vi">
-<TITLE>Æô¶¯Ç°³õÊ¼»¯</TITLE>
+<TITLE>å¯åŠ¨å‰åˆå§‹åŒ–</TITLE>
 <HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
 <HELP_TAG>AF_Pre_Launch_Init.html</HELP_TAG>
 <RTM_PATH type="default"></RTM_PATH>
@@ -12,69 +12,69 @@ By default, this method does nothing. A descendant class may override it to defi
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="error out">
-		<DESC><<B>>´íÎóÊä³ö<</B>>°üº¬´íÎóĞÅÏ¢¡£¸ÃÊä³öÌá¹©±ê×¼´íÎóÊä³ö¹¦ÄÜ¡£</DESC>
+	<CONTROL ID=83 type="ç°‡" name="error out">
+		<DESC><<B>>é”™è¯¯è¾“å‡º<</B>>åŒ…å«é”™è¯¯ä¿¡æ¯ã€‚è¯¥è¾“å‡ºæä¾›æ ‡å‡†é”™è¯¯è¾“å‡ºåŠŸèƒ½ã€‚</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>´íÎóÊä³ö</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>é”™è¯¯è¾“å‡º</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
-				<DESC><<B>>×´Ì¬<</B>>µÄÖµÎªTRUE£¨²æ£©Ê±±íÊ¾´íÎó£¬ÎªFALSE£¨¹´£©Ê±±íÊ¾¾¯¸æ»òÎŞ´íÎó¡£</DESC>
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
+				<DESC><<B>>çŠ¶æ€<</B>>çš„å€¼ä¸ºTRUEï¼ˆå‰ï¼‰æ—¶è¡¨ç¤ºé”™è¯¯ï¼Œä¸ºFALSEï¼ˆå‹¾ï¼‰æ—¶è¡¨ç¤ºè­¦å‘Šæˆ–æ— é”™è¯¯ã€‚</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>×´Ì¬</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>çŠ¶æ€</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="code">
-				<DESC><<B>>´úÂë<</B>>ÊÇ´íÎó»ò¾¯¸æ´úÂë¡£</DESC>
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
+				<DESC><<B>>ä»£ç <</B>>æ˜¯é”™è¯¯æˆ–è­¦å‘Šä»£ç ã€‚</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>´úÂë</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>ä»£ç </STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
-				<DESC><<B>>Ô´<</B>>±íÊ¾´íÎó»ò¾¯¸æµÄÔ´£¬´ó¶àÊıÇé¿öÏÂ±íÊ¾³öÏÖ´íÎó»ò¾¯¸æµÄ½ÚµãÃû¡£</DESC>
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
+				<DESC><<B>>æº<</B>>è¡¨ç¤ºé”™è¯¯æˆ–è­¦å‘Šçš„æºï¼Œå¤§å¤šæ•°æƒ…å†µä¸‹è¡¨ç¤ºå‡ºç°é”™è¯¯æˆ–è­¦å‘Šçš„èŠ‚ç‚¹åã€‚</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ô´</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>æº</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<DESC><<B>>²Ù×÷ÕßÊäÈë<</B>>±íÊ¾²Ù×÷Õß¡£</DESC>
+	<DESC><<B>>æ“ä½œè€…è¾“å…¥<</B>>è¡¨ç¤ºæ“ä½œè€…ã€‚</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>²Ù×÷ÕßÊäÈë</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>æ“ä½œè€…è¾“å…¥</STEXT></LABEL></PART>
 	</PARTS>
-	<DESC><<B>>²Ù×÷ÕßÊä³ö<</B>>·µ»Ø²Ù×÷Õß¡£</DESC>
+	<DESC><<B>>æ“ä½œè€…è¾“å‡º<</B>>è¿”å›æ“ä½œè€…ã€‚</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>²Ù×÷ÕßÊä³ö</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>æ“ä½œè€…è¾“å‡º</STEXT></LABEL></PART>
 	</PARTS>
-	<CONTROL ID=81 type="×Ö·û´®" name="XML Elements">
-		<DESC><<B>>XMLÔªËØ<</B>>ÔÚ×Ö·û´®ÖĞ·µ»Ø½éÓÚ<</Version>>ºÍ<</LVData>>±ê¼Ç½áÎ²µÄ¶¥²ãXML±ê¼Ç¡£¸ÃÊä³ö¶Ë¿ÉÁ¬ÏßÖÁ´ÓXML»¹Ô­º¯Êı¡£</DESC>
+	<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="XML Elements">
+		<DESC><<B>>XMLå…ƒç´ <</B>>åœ¨å­—ç¬¦ä¸²ä¸­è¿”å›ä»‹äº<</Version>>å’Œ<</LVData>>æ ‡è®°ç»“å°¾çš„é¡¶å±‚XMLæ ‡è®°ã€‚è¯¥è¾“å‡ºç«¯å¯è¿çº¿è‡³ä»XMLè¿˜åŸå‡½æ•°ã€‚</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>XMLÔªËØ</STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>XMLå…ƒç´ </STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>
 </CONTENT>
 <BDCONTENT>
-	<CONTROL ID=100 type="×Ô¶¨ÒåÀàĞÍ" name="P3AT_Current">
+	<CONTROL ID=100 type="è‡ªå®šä¹‰ç±»å‹" name="P3AT_Current">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="×Ô¶¨ÒåÀàĞÍ¿Ø¼ş">
-				<CONTROL ID=83 type="´Ø³£Á¿" name="">
+			<PART ID=8010 order=0 type="è‡ªå®šä¹‰ç±»å‹æ§ä»¶">
+				<CONTROL ID=83 type="ç°‡å¸¸é‡" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
@@ -87,34 +87,34 @@ By default, this method does nothing. A descendant class may override it to defi
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=12 order=0 type="ÏÂÀ­ÁĞ±íÎÄ±¾"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+								<PART ID=12 order=0 type="ä¸‹æ‹‰åˆ—è¡¨æ–‡æœ¬"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="now_pose_Rot_deg">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="now_pose_Rot_deg">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="now_pose_Y">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="now_pose_Y">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="now_pose_X">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="now_pose_X">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="max_rot">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="max_rot">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="max_vel">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="max_vel">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -128,18 +128,18 @@ By default, this method does nothing. A descendant class may override it to defi
 	<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=81 type="×Ö·û´®³£Á¿" name="P_Text">
+	<CONTROL ID=81 type="å­—ç¬¦ä¸²å¸¸é‡" name="P_Text">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=76455543 primName="´´½¨ÓÃ»§ÊÂ¼ş">
+	<NODE ID=47 type="Function" primID=76455543 primName="åˆ›å»ºç”¨æˆ·äº‹ä»¶">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="P_Stop">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="P_Stop">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -149,13 +149,13 @@ By default, this method does nothing. A descendant class may override it to defi
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=12 order=0 type="ÏÂÀ­ÁĞ±íÎÄ±¾"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=12 order=0 type="ä¸‹æ‹‰åˆ—è¡¨æ–‡æœ¬"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=76455543 primName="´´½¨ÓÃ»§ÊÂ¼ş">
+	<NODE ID=47 type="Function" primID=76455543 primName="åˆ›å»ºç”¨æˆ·äº‹ä»¶">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=76455543 primName="´´½¨ÓÃ»§ÊÂ¼ş">
+	<NODE ID=47 type="Function" primID=76455543 primName="åˆ›å»ºç”¨æˆ·äº‹ä»¶">
 		<DESC></DESC>
 	</NODE>
 	<NODE ID=260 type="Object Method SubVI" subVIName="WriteText.vi">
@@ -167,11 +167,11 @@ By default, this method does nothing. A descendant class may override it to defi
 	<NODE ID=260 type="Object Method SubVI" subVIName="WriteEnum.vi">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=91 type="Â·¾¶³£Á¿" name="²ğ·ÖµÄÂ·¾¶">
+	<CONTROL ID=91 type="è·¯å¾„å¸¸é‡" name="æ‹†åˆ†çš„è·¯å¾„">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
 		</PARTS>
 		<PRIV>
 			<PROMPT></PROMPT>
@@ -184,22 +184,22 @@ By default, this method does nothing. A descendant class may override it to defi
 			<PATH type="relative">Ini<SEP>P3AT_Ini.xml</PATH>
 		</DEFAULT>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=48545053 primName="²ğ·ÖÂ·¾¶">
+	<NODE ID=47 type="Function" primID=48545053 primName="æ‹†åˆ†è·¯å¾„">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=48545053 primName="²ğ·ÖÂ·¾¶">
+	<NODE ID=47 type="Function" primID=48545053 primName="æ‹†åˆ†è·¯å¾„">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=48545042 primName="´´½¨Â·¾¶">
+	<NODE ID=47 type="Function" primID=48545042 primName="åˆ›å»ºè·¯å¾„">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=4C464956 primName="µ±Ç°VIÂ·¾¶">
+	<NODE ID=47 type="Function" primID=4C464956 primName="å½“å‰VIè·¯å¾„">
 		<DESC></DESC>
 	</NODE>
 	<NODE ID=68 type="Index Array">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=4C4D5855 primName="´ÓXML»¹Ô­">
+	<NODE ID=47 type="Function" primID=4C4D5855 primName="ä»XMLè¿˜åŸ">
 		<DESC></DESC>
 	</NODE>
 	<NODE ID=197 type="PolyVI" subVIName="Read From XML File.vi">

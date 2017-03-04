@@ -7,21 +7,21 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="parcerctl">
+	<CONTROL ID=83 type="ç°‡" name="parcerctl">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>parcerctl</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>parcerctl</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="ÊÕµ½Ä¿±êµã£¬ºöÂÔºóÃæµÄ×ªÏòÃüÁî">
+			<CONTROL ID=79 type="å¸ƒå°”" name="æ”¶åˆ°ç›®æ ‡ç‚¹ï¼Œå¿½ç•¥åŽé¢çš„è½¬å‘å‘½ä»¤">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>ÊÕµ½Ä¿±êµã£¬ºöÂÔºóÃæµÄ×ªÏòÃüÁî</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>æ”¶åˆ°ç›®æ ‡ç‚¹ï¼Œå¿½ç•¥åŽé¢çš„è½¬å‘å‘½ä»¤</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>

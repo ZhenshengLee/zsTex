@@ -8,66 +8,66 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="��" name="error out">
-		<DESC><<B>>�������<</B>>����������Ϣ��������ṩ��׼����������ܡ�</DESC>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>错误输出<</B>>包含错误信息。该输出提供标准错误输出功能。</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="����"><LABEL><STEXT>�������</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="����" name="status">
-				<DESC><<B>>״̬<</B>>��ֵΪTRUE���棩ʱ��ʾ����ΪFALSE������ʱ��ʾ������޴���</DESC>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>状态<</B>>的值为TRUE（叉）时表示错误，为FALSE（勾）时表示警告或无错误。</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="�����ı�"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="����"><LABEL><STEXT>״̬</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="��ֵ" name="code">
-				<DESC><<B>>����<</B>>�Ǵ���򾯸���롣</DESC>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>代码<</B>>是错误或警告代码。</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="����"><LABEL><STEXT>����</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="�ַ���" name="source">
-				<DESC><<B>>Դ<</B>>��ʾ����򾯸��Դ�����������±�ʾ���ִ���򾯸�Ľڵ�����</DESC>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>源<</B>>表示错误或警告的源，大多数情况下表示出现错误或警告的节点名。</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="�ı�"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="����"><LABEL><STEXT>Դ</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=81 type="�ַ���" name="address">
+	<CONTROL ID=81 type="字符串" name="address">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="�ı�"><LABEL><STEXT>192.168.31.68</STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="����"><LABEL><STEXT>address</STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT>192.168.31.68</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>address</STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>
-	<LABEL><STEXT>�ʼǱ���192.168.31.133; 192.168.1.117</STEXT></LABEL>
-	<LABEL><STEXT>�����ˣ�192.168.31.68; 192.168.1.134</STEXT></LABEL>
-	<LABEL><STEXT>�ʼǱ���192.168.31.127</STEXT></LABEL>
-	<CONTROL ID=79 type="����" name="ģ��">
+	<LABEL><STEXT>笔记本：192.168.31.133; 192.168.1.117</STEXT></LABEL>
+	<LABEL><STEXT>机器人：192.168.31.68; 192.168.1.134</STEXT></LABEL>
+	<LABEL><STEXT>笔记本：192.168.31.127</STEXT></LABEL>
+	<CONTROL ID=79 type="布尔" name="模拟">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="����"><LABEL><STEXT>ģ��</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>模拟</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type="��ֵ" name="Ini_maxvel">
+	<CONTROL ID=80 type="数值" name="Ini_maxvel">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="����"><LABEL><STEXT>Ini_maxvel</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>Ini_maxvel</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
 </CONTENT>
@@ -85,7 +85,7 @@
 	<TIP></TIP>
 	<PARTS>
 	</PARTS>
-	<CONTROL ID=79 type="�ٳ���" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="假常量" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>

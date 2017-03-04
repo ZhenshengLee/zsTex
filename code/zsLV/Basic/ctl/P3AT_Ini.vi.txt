@@ -7,99 +7,99 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="P3AT_Ini">
+	<CONTROL ID=83 type="ç°‡" name="P3AT_Ini">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>P3AT_Ini</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>P3AT_Ini</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=88 type="»¬¶¯¸Ë" name="max_vel">
+			<CONTROL ID=88 type="æ»‘åŠ¨æ†" name="max_vel">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=88 type="»¬¶¯¸Ë" name="max_rot">
+			<CONTROL ID=88 type="æ»‘åŠ¨æ†" name="max_rot">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_X">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_X">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_Y">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Y">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="Ini_pose_Rot_deg">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Rot_deg">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=239 type="µ¥Ñ¡°´Å¥" name="Control_Mode">
+			<CONTROL ID=239 type="å•é€‰æŒ‰é’®" name="Control_Mode">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
 					<GROUPER>
 						<PARTS>
 						</PARTS></GROUPER>
-					<CONTROL ID=79 type="²¼¶û" name="Undefined">
+					<CONTROL ID=79 type="å¸ƒå°”" name="Undefined">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Undefined</STRING></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+							<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Undefined</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=79 type="²¼¶û" name="Input">
+					<CONTROL ID=79 type="å¸ƒå°”" name="Input">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+							<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=79 type="²¼¶û" name="Voice">
+					<CONTROL ID=79 type="å¸ƒå°”" name="Voice">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+							<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=79 type="²¼¶û" name="Map">
+					<CONTROL ID=79 type="å¸ƒå°”" name="Map">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+							<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
-					<CONTROL ID=79 type="²¼¶û" name="Joy">
+					<CONTROL ID=79 type="å¸ƒå°”" name="Joy">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy</STRING></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+							<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy</STRING></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>

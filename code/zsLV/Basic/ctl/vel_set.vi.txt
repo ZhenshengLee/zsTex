@@ -7,42 +7,42 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="vel_set">
+	<CONTROL ID=83 type="ç°‡" name="vel_set">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>vel_set</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>vel_set</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊýÖµ" name="rot_z_max">
+			<CONTROL ID=80 type="æ•°å€¼" name="rot_z_max">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>rot_z_max</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>rot_z_max</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="lin_x_max">
+			<CONTROL ID=80 type="æ•°å€¼" name="lin_x_max">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>lin_x_max</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>lin_x_max</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="rot_z_min">
+			<CONTROL ID=80 type="æ•°å€¼" name="rot_z_min">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>rot_z_min</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>rot_z_min</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="lin_x_min">
+			<CONTROL ID=80 type="æ•°å€¼" name="lin_x_min">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>lin_x_min</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>lin_x_min</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>

@@ -7,43 +7,43 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="MapPosition">
+	<CONTROL ID=83 type="ç°‡" name="MapPosition">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>MapPosition</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>MapPosition</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊýÖµ" name="global x">
+			<CONTROL ID=80 type="æ•°å€¼" name="global x">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global x</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="global y">
+			<CONTROL ID=80 type="æ•°å€¼" name="global y">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global y</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="global_rot">
+			<CONTROL ID=80 type="æ•°å€¼" name="global_rot">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=79 type="²¼¶û" name="Send">
+			<CONTROL ID=79 type="å¸ƒå°”" name="Send">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING>È·¶¨</STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Send</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING>ç¡®å®š</STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Send</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>

@@ -7,12 +7,12 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=81 type="×Ö·û´®" name="Goal">
+	<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Goal">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Goal</STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Goal</STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>

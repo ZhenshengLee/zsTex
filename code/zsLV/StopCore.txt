@@ -1,0 +1,106 @@
+<VI syntaxVersion=11 LVversion=14008000 revision=83 name="ControlPanel.lvlib:ControlPanel.lvclass:Stop Core.vi">
+<TITLE>停止核心</TITLE>
+<HELP_PATH><PATH type="absolute"><<helpdir>><SEP>lvcomm.chm</PATH></HELP_PATH>
+<HELP_TAG>AF_Stop_Core.html</HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC>(<<B>>文件名<</B>>：Actor Framework.lvlib:Actor.lvclass:Stop Core.vi)<CRLF>
+<CRLF>
+定义停止前操作者的动作。使用<<B>>最终错误代码<</B>>输入判断操作者是否在出错时关闭。<CRLF>
+<CRLF>
+默认情况下，该方法不执行任何动作。子孙类重写该方法，定义出错时的操作，例如，关闭操作者核心方法初始的进程。</DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<DESC><<B>>操作者输入<</B>>表示停止处理消息后，操作者的状态。</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>操作者输入</STEXT></LABEL></PART>
+	</PARTS>
+	<DESC><<B>>操作者输出<</B>>返回操作者。</DESC>
+	<TIP></TIP>
+	<PARTS>
+		<PART ID=82 order=0 type="标题"><LABEL><STEXT>操作者输出</STEXT></LABEL></PART>
+	</PARTS>
+	<CONTROL ID=80 type="数值" name="final error code">
+		<DESC><<B>>最终错误代码<</B>>表示引起操作者关闭的错误代码。</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>最终错误代码</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<LABEL><STEXT>写入旧的xml</STEXT></LABEL>
+	<NODE ID=47 type="Function" primID=76455544 primName="销毁用户事件">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=76455544 primName="销毁用户事件">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=76455544 primName="销毁用户事件">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=79 type="假常量" name="event data">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=76455546 primName="产生用户事件">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=260 type="Object Method SubVI" subVIName="ReadText.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=260 type="Object Method SubVI" subVIName="ReadStop.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=260 type="Object Method SubVI" subVIName="ReadEnum.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=91 type="路径常量" name="拆分的路径">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<PROMPT></PROMPT>
+			<MTCH_PTN></MTCH_PTN>
+			<PTN_LBEL></PTN_LBEL>
+			<STRT_PTH><PATH type="absolute"></PATH></STRT_PTH>
+			<PTH_BTN_LBL></PTH_BTN_LBL>
+		</PRIV>
+		<DEFAULT>
+			<PATH type="relative">Ini<SEP>P3AT_Ini.xml</PATH>
+		</DEFAULT>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=48545053 primName="拆分路径">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=48545053 primName="拆分路径">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=48545042 primName="创建路径">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=4C464956 primName="当前VI路径">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=47 type="Function" primID=4C4D5846 primName="平化至XML">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=197 type="PolyVI" subVIName="Write to XML File.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=292 type="Call Parent Method SubVI" subVIName="Stop Core.vi">
+		<DESC></DESC>
+	</NODE>
+</BDCONTENT>
+</VI>
+
+

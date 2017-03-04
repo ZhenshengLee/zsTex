@@ -7,76 +7,76 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="VoiceControl_Cmd_Cluster">
+	<CONTROL ID=83 type="ç°‡" name="VoiceControl_Cmd_Cluster">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>VoiceControl_Cmd_Cluster</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>VoiceControl_Cmd_Cluster</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=81 type="×Ö·û´®" name="StartPoint">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="StartPoint">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>StartPoint</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>StartPoint</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="EndPoint">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="EndPoint">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>EndPoint</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>EndPoint</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="Action">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Action">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Action</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Action</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="Direction">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Direction">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Direction</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Direction</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="Distance">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Distance">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Distance</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Distance</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="Velocity">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Velocity">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Velocity</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Velocity</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="Assurance/Yes">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="Assurance/Yes">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Assurance/Yes</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Assurance/Yes</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>

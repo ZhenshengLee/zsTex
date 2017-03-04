@@ -7,67 +7,67 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="¥ÿ" name="Semantic_Voice_Cluster">
+	<CONTROL ID=83 type="Á∞á" name="Semantic_Voice_Cluster">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Semantic_Voice_Cluster</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Semantic_Voice_Cluster</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="ÀŸ∂»">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="ÈÄüÂ∫¶">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>ÀŸ∂»</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÈÄüÂ∫¶</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="æ‡¿Î">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="Ë∑ùÁ¶ª">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>æ‡¿Î</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Ë∑ùÁ¶ª</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="∑ΩœÚ">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="ÊñπÂêë">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>∑ΩœÚ</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÊñπÂêë</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="∂Ø◊˜">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="Âä®‰Ωú">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>∂Ø◊˜</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Âä®‰Ωú</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="÷’µ„">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="ÁªàÁÇπ">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>÷’µ„</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÁªàÁÇπ</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
-			<CONTROL ID=81 type="◊÷∑˚¥Æ" name="∆µ„">
+			<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="Ëµ∑ÁÇπ">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>∆µ„</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Ëµ∑ÁÇπ</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
