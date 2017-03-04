@@ -5,7 +5,7 @@
     "args": [
         "-interaction=nonstopmode",
         "-file-line-error",
-        "src/zsbeamer.tex"
+        "zstexcopyright.tex"
     ],
     "showOutput": "silent",
     "problemMatcher": {
