@@ -15,73 +15,73 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="error out">
+	<CONTROL ID=83 type="ç°‡" name="error out">
 		<DESC><<B>>error out<</B>> contains error information. This output provides standard error out functionality.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>error out</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
 				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>status</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>status</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="code">
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
 				<DESC><<B>>code<</B>> is the error or warning code.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>code</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>code</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
 				<DESC><<B>>source<</B>> describes the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>source</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>source</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="error in">
+	<CONTROL ID=83 type="ç°‡" name="error in">
 		<DESC><<B>>error in<</B>> describes error conditions that occur before this node runs. This input provides standard error in functionality.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>error in</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>error in</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
 				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred before this node ran or FALSE (checkmark) to indicate a warning or that no error occurred before this node ran. The default is FALSE.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>status</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>status</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="code">
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
 				<DESC><<B>>code<</B>> is the error or warning code. The default is 0.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>code</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>code</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
 				<DESC><<B>>source<</B>> specifies the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning. The default is an empty string.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>source</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>source</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
@@ -90,204 +90,204 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 	<DESC><<B>>Actor in<</B>> specifies the state of the actor after it has launched.</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC><<B>>Actor out<</B>> returns the state of the actor after it has shut down.</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Actor out</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Actor out</STEXT></LABEL></PART>
 	</PARTS>
-	<CONTROL ID=79 type="²¼¶û" name="Í£Ö¹ĞÅºÅ">
+	<CONTROL ID=79 type="å¸ƒå°”" name="åœæ­¢ä¿¡å·">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Í£Ö¹ĞÅºÅ</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>åœæ­¢ä¿¡å·</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="sensor">
+	<CONTROL ID=83 type="ç°‡" name="sensor">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>sensor</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>sensor</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊıÖµ" name="motor">
+			<CONTROL ID=80 type="æ•°å€¼" name="motor">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>motor</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>motor</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="voltage">
+			<CONTROL ID=80 type="æ•°å€¼" name="voltage">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>voltage</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>voltage</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=100 type="×Ô¶¨ÒåÀàĞÍ" name="robot position">
+	<CONTROL ID=100 type="è‡ªå®šä¹‰ç±»å‹" name="robot position">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="×Ô¶¨ÒåÀàĞÍ¿Ø¼ş">
-				<CONTROL ID=83 type="´Ø" name="">
+			<PART ID=8010 order=0 type="è‡ªå®šä¹‰ç±»å‹æ§ä»¶">
+				<CONTROL ID=83 type="ç°‡" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
-						<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT></STEXT></LABEL></PART>
+						<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT></STEXT></LABEL></PART>
 					</PARTS>
 					<CONTENT>
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=80 type="ÊıÖµ" name="global x">
+						<CONTROL ID=80 type="æ•°å€¼" name="global x">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global x</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ" name="global y">
+						<CONTROL ID=80 type="æ•°å€¼" name="global y">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global y</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ" name="global z">
+						<CONTROL ID=80 type="æ•°å€¼" name="global z">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global z</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global z</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ" name=" floor NO.">
+						<CONTROL ID=80 type="æ•°å€¼" name=" floor NO.">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT> floor NO.</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT> floor NO.</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊıÖµ" name="global_rot">
+						<CONTROL ID=80 type="æ•°å€¼" name="global_rot">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
 					</CONTENT>
 				</CONTROL>
 			</PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>robot position</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>robot position</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="P3AT_Ini_Pose">
+	<CONTROL ID=83 type="ç°‡" name="P3AT_Ini_Pose">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>P3AT_Ini_Pose</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>P3AT_Ini_Pose</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊıÖµ" name="Ini_pose_Rot_deg">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Rot_deg">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Rot_deg</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="Ini_pose_Y">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_Y">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_Y</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="Ini_pose_X">
+			<CONTROL ID=80 type="æ•°å€¼" name="Ini_pose_X">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Ini_pose_X</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="MapPosition">
+	<CONTROL ID=83 type="ç°‡" name="MapPosition">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>MapPosition</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>MapPosition</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="Send">
+			<CONTROL ID=79 type="å¸ƒå°”" name="Send">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Send</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Send</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="global_rot">
+			<CONTROL ID=80 type="æ•°å€¼" name="global_rot">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global_rot</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="global y">
+			<CONTROL ID=80 type="æ•°å€¼" name="global y">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global y</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global y</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="global x">
+			<CONTROL ID=80 type="æ•°å€¼" name="global x">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>global x</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>global x</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="vel_cal">
+	<CONTROL ID=83 type="ç°‡" name="vel_cal">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>vel_cal</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>vel_cal</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type="ÊıÖµ" name="rot_z">
+			<CONTROL ID=80 type="æ•°å€¼" name="rot_z">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊıÖµ" name="lin_x">
+			<CONTROL ID=80 type="æ•°å€¼" name="lin_x">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
 </CONTENT>
 <BDCONTENT>
-	<CONTROL ID=79 type="¼Ù³£Á¿" >
+	<CONTROL ID=79 type="å‡å¸¸é‡" >
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -317,19 +317,19 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 	<NODE ID=182 type="CtlRefConst">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<LABEL><STEXT>±£Ö¤ÊÂ¼ş½á¹¹ÓĞĞ§</STEXT></LABEL>
+	<LABEL><STEXT>ä¿è¯äº‹ä»¶ç»“æ„æœ‰æ•ˆ</STEXT></LABEL>
 	<NODE ID=182 type="CtlRefConst">
 		<DESC></DESC>
 	</NODE>
@@ -354,25 +354,25 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 	<NODE ID=33 type="While Loop">
 		<DESC></DESC>
 		<BDCONTENT>
-			<NODE ID=49 type="SubVI" name="·¢ËÍvel_cal_Reference.vi" subVIName="·¢ËÍvel_cal_Reference.vi">
+			<NODE ID=49 type="SubVI" name="å‘é€vel_cal_Reference.vi" subVIName="å‘é€vel_cal_Reference.vi">
 				<DESC></DESC>
 			</NODE>
 			<NODE ID=140 type="Property Node">
 				<DESC></DESC>
 			</NODE>
-			<NODE ID=49 type="SubVI" name="·¢ËÍTask_robot_position_Reference.vi" subVIName="·¢ËÍTask_robot_position_Reference.vi">
+			<NODE ID=49 type="SubVI" name="å‘é€Task_robot_position_Reference.vi" subVIName="å‘é€Task_robot_position_Reference.vi">
 				<DESC></DESC>
 			</NODE>
-			<NODE ID=49 type="SubVI" name="·¢ËÍSensor_Msg.vi" subVIName="·¢ËÍSensor_Msg.vi">
-				<DESC></DESC>
-			</NODE>
-			<NODE ID=140 type="Property Node">
+			<NODE ID=49 type="SubVI" name="å‘é€Sensor_Msg.vi" subVIName="å‘é€Sensor_Msg.vi">
 				<DESC></DESC>
 			</NODE>
 			<NODE ID=140 type="Property Node">
 				<DESC></DESC>
 			</NODE>
-			<CONTROL ID=80 type="ÊıÖµ³£Á¿" >
+			<NODE ID=140 type="Property Node">
+				<DESC></DESC>
+			</NODE>
+			<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" >
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
@@ -383,7 +383,7 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 				<BDCONTENT>
 				</BDCONTENT>
 				<BDCONTENT>
-					<CONTROL ID=79 type="¼Ù³£Á¿" >
+					<CONTROL ID=79 type="å‡å¸¸é‡" >
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
@@ -391,16 +391,16 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 					</CONTROL>
 				</BDCONTENT>
 			</NODE>
-			<CONTROL ID=80 type="ÊıÖµ³£Á¿" name="µÈ´ıÊ±¼ä£¨ºÁÃë£©">
+			<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="ç­‰å¾…æ—¶é—´ï¼ˆæ¯«ç§’ï¼‰">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
 				</PARTS>
 			</CONTROL>
-			<NODE ID=47 type="Function" primID=54494157 primName="µÈ´ı(ms)">
+			<NODE ID=47 type="Function" primID=54494157 primName="ç­‰å¾…(ms)">
 				<DESC></DESC>
 			</NODE>
-			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>½ÓÊÜÀ´×ÔRemoteP3ATµÄ´«¸ĞÆ÷ĞÅÏ¢£¬²¢Ä¬ÈÏ×ª·¢¸øCT-PN ºÍ MAP£¨ÖÜÆÚĞÔÏûÏ¢£¬50ms£©</STEXT></LABEL></PART>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>æ¥å—æ¥è‡ªRemoteP3ATçš„ä¼ æ„Ÿå™¨ä¿¡æ¯ï¼Œå¹¶é»˜è®¤è½¬å‘ç»™CT-PN å’Œ MAPï¼ˆå‘¨æœŸæ€§æ¶ˆæ¯ï¼Œ50msï¼‰</STEXT></LABEL></PART>
 		</BDCONTENT>
 	</NODE>
 	<NODE ID=33 type="While Loop">
@@ -409,28 +409,28 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 			<NODE ID=213 type="Event Struct">
 				<DESC></DESC>
 				<BDCONTENT>
-					<LABEL><STEXT>ÓÃ»§ÒÑ¾­°´ÏÂ¡°Í£Ö¹¡±°´Å¥»òµ¥»÷¹Ø±Õ´°¿Ú£¬µ«¸ÃÊÂ¼şÖ¡Î´¶Ô¡°Í£Ö¹¡±²¼¶û¿Ø¼ş·µ»Ø¡°Õæ¡±¡£·´¶ø½«¡°Í£Ö¹¡±ÏûÏ¢·¢ËÍ¸ø²Ù×÷Õß¡£µ±²Ù×÷ÕßÊµ¼ÊÖ´ĞĞÍê³ÉÊ±£¬½«Í¨¹ı´¥·¢¡°Í£Ö¹ĞÅºÅ¡±¿Ø¼şµÄ¡°Öµ£¨ĞÅºÅ£©¡±·½·¨À´¹Ø±Õ¸ÃÑ­»·¡£ÕâÑù×ö¿ÉÒÔÈ·±£ÎŞÂÛÍ¨¹ıUI£¬»¹ÊÇÍ¨¹ı´íÎó´¦Àí·ÖÖ§£¬¾ùÓÉÍ¬Ò»¸öĞÅºÅ´¥·¢Ñ­»·Í£Ö¹£»ÈçÓĞ±ØÒª£¬´Ë´¦¿ÉÒÔÌí¼ÓÇå³ı¶Ô»°¿òÊ±±ØĞëÖ´ĞĞµÄÈÎºÎ´úÂë¡£</STEXT></LABEL>
+					<LABEL><STEXT>ç”¨æˆ·å·²ç»æŒ‰ä¸‹â€œåœæ­¢â€æŒ‰é’®æˆ–å•å‡»å…³é—­çª—å£ï¼Œä½†è¯¥äº‹ä»¶å¸§æœªå¯¹â€œåœæ­¢â€å¸ƒå°”æ§ä»¶è¿”å›â€œçœŸâ€ã€‚åè€Œå°†â€œåœæ­¢â€æ¶ˆæ¯å‘é€ç»™æ“ä½œè€…ã€‚å½“æ“ä½œè€…å®é™…æ‰§è¡Œå®Œæˆæ—¶ï¼Œå°†é€šè¿‡è§¦å‘â€œåœæ­¢ä¿¡å·â€æ§ä»¶çš„â€œå€¼ï¼ˆä¿¡å·ï¼‰â€æ–¹æ³•æ¥å…³é—­è¯¥å¾ªç¯ã€‚è¿™æ ·åšå¯ä»¥ç¡®ä¿æ— è®ºé€šè¿‡UIï¼Œè¿˜æ˜¯é€šè¿‡é”™è¯¯å¤„ç†åˆ†æ”¯ï¼Œå‡ç”±åŒä¸€ä¸ªä¿¡å·è§¦å‘å¾ªç¯åœæ­¢ï¼›å¦‚æœ‰å¿…è¦ï¼Œæ­¤å¤„å¯ä»¥æ·»åŠ æ¸…é™¤å¯¹è¯æ¡†æ—¶å¿…é¡»æ‰§è¡Œçš„ä»»ä½•ä»£ç ã€‚</STEXT></LABEL>
 				</BDCONTENT>
 				<BDCONTENT>
-					<LABEL><STEXT>Ê¹ÓÃÍ¨ÖªÆ÷Í£Ö¹<LF>
-ÆäËû·¢ËÍÏûÏ¢Ñ­»·</STEXT></LABEL>
+					<LABEL><STEXT>ä½¿ç”¨é€šçŸ¥å™¨åœæ­¢<LF>
+å…¶ä»–å‘é€æ¶ˆæ¯å¾ªç¯</STEXT></LABEL>
 				</BDCONTENT>
 				<BDCONTENT>
-					<NODE ID=140 type="Property Node" name="Í£Ö¹ĞÅºÅ">
+					<NODE ID=140 type="Property Node" name="åœæ­¢ä¿¡å·">
 						<DESC></DESC>
 					</NODE>
 				</BDCONTENT>
 			</NODE>
-			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>ÏìÓ¦¹ØÓÚÄ£Ê½×ª»»µÄ°´¼üÏûÏ¢£¬ÒÔ¼°¸ºÔğÍ£Ö¹£¨»ùÓÚÖµ¸Ä±äµÄÊ±¼ä£¬±ØĞë¸³³õÖµ£¬²»È»¿ÉÄÜ²»»á´¥·¢ÊÂ¼ş£©</STEXT></LABEL></PART>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT style='B' color=FFFFFF>å“åº”å…³äºæ¨¡å¼è½¬æ¢çš„æŒ‰é”®æ¶ˆæ¯ï¼Œä»¥åŠè´Ÿè´£åœæ­¢ï¼ˆåŸºäºå€¼æ”¹å˜çš„æ—¶é—´ï¼Œå¿…é¡»èµ‹åˆå€¼ï¼Œä¸ç„¶å¯èƒ½ä¸ä¼šè§¦å‘äº‹ä»¶ï¼‰</STEXT></LABEL></PART>
 		</BDCONTENT>
 	</NODE>
 	<NODE ID=235 type="Register For Events">
 		<DESC></DESC>
 	</NODE>
-	<LABEL><STEXT>µ±ÓĞ¶à¸öÄ£Ê½Ê±£¬ĞèÒª¿¼ÂÇÄ£Ê½¼äÇĞ»»Ê±µÄ¶¯×÷</STEXT></LABEL>
-	<LABEL><STEXT>ÏÈ°ÑReadyÄ£Ê½¸ã¶¨£¬ÔÙ¸ã¶¨voiceÄ£Ê½£¬ÆäËûÏÈ²»¹Ü</STEXT></LABEL>
-	<LABEL><STEXT>ÕâÀï¸ºÔğ´¦ÀíP3-ATÏûÏ¢ºÍActorControlÏûÏ¢<LF>
-Ö÷ÒªÓĞ£º×î´óËÙ¶ÈĞŞ¸Ä£¬Ä£Ê½ÇĞ»»£¬ÆäËûµÄÏûÏ¢´¦ÀíÔÚTaskº¯ÊıÖĞ×ª·¢</STEXT></LABEL>
+	<LABEL><STEXT>å½“æœ‰å¤šä¸ªæ¨¡å¼æ—¶ï¼Œéœ€è¦è€ƒè™‘æ¨¡å¼é—´åˆ‡æ¢æ—¶çš„åŠ¨ä½œ</STEXT></LABEL>
+	<LABEL><STEXT>å…ˆæŠŠReadyæ¨¡å¼æå®šï¼Œå†æå®švoiceæ¨¡å¼ï¼Œå…¶ä»–å…ˆä¸ç®¡</STEXT></LABEL>
+	<LABEL><STEXT>è¿™é‡Œè´Ÿè´£å¤„ç†P3-ATæ¶ˆæ¯å’ŒActorControlæ¶ˆæ¯<LF>
+ä¸»è¦æœ‰ï¼šæœ€å¤§é€Ÿåº¦ä¿®æ”¹ï¼Œæ¨¡å¼åˆ‡æ¢ï¼Œå…¶ä»–çš„æ¶ˆæ¯å¤„ç†åœ¨Taskå‡½æ•°ä¸­è½¬å‘</STEXT></LABEL>
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
@@ -439,13 +439,13 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 	<TIP></TIP>
 	<PARTS>
 	</PARTS>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -474,10 +474,10 @@ Descendant classes may override this VI to append parallel tasks for the actor t
 		<DESC></DESC>
 	</NODE>
 	<WIRE>
-		<PART ID=16 order=0 type="Ãû³Æ±êÇ©"><LABEL><STEXT>CT-PN</STEXT></LABEL></PART>
+		<PART ID=16 order=0 type="åç§°æ ‡ç­¾"><LABEL><STEXT>CT-PN</STEXT></LABEL></PART>
 	</WIRE>
 	<WIRE>
-		<PART ID=16 order=0 type="Ãû³Æ±êÇ©"><LABEL><STEXT>MAP</STEXT></LABEL></PART>
+		<PART ID=16 order=0 type="åç§°æ ‡ç­¾"><LABEL><STEXT>MAP</STEXT></LABEL></PART>
 	</WIRE>
 </BDCONTENT>
 </VI>

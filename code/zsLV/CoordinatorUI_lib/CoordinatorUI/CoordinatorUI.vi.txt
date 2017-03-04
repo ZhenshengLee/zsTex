@@ -7,12 +7,12 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="Cluster of class private data">
+	<CONTROL ID=83 type="ç°‡" name="Cluster of class private data">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=25 order=0 type="ÐÞÊÎ"><LABEL><STEXT>The Configuration Settings is not a typedef because it is never meant to be manipulated as a single element. The containment of these elements as a cluster is merely a convenience to show which fields come from the config file versus fields that are part of the application's running state.</STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Cluster of class private data</STEXT></LABEL></PART>
+			<PART ID=25 order=0 type="ä¿®é¥°"><LABEL><STEXT>The Configuration Settings is not a typedef because it is never meant to be manipulated as a single element. The containment of these elements as a cluster is merely a convenience to show which fields come from the config file versus fields that are part of the application's running state.</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Cluster of class private data</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
@@ -21,40 +21,40 @@
 			<DESC></DESC>
 			<TIP></TIP>
 			<PARTS>
-				<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Process State Queue</STEXT></LABEL></PART>
+				<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Process State Queue</STEXT></LABEL></PART>
 			</PARTS>
-			<CONTROL ID=85 type="¿Ø¼þÒýÓÃ¾ä±ú" name="Event Log Reference">
+			<CONTROL ID=85 type="æŽ§ä»¶å¼•ç”¨å¥æŸ„" name="Event Log Reference">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Event Log Reference</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Event Log Reference</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
-					<CONTROL ID=81 type="×Ö·û´®" name="String">
+					<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="String">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>String</STEXT></LABEL></PART>
+							<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>String</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>
 			</CONTROL>
-			<CONTROL ID=83 type="´Ø" name="DNL_Configuration Settings">
+			<CONTROL ID=83 type="ç°‡" name="DNL_Configuration Settings">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>DNL_Configuration Settings</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>DNL_Configuration Settings</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
 					<GROUPER>
 						<PARTS>
 						</PARTS></GROUPER>
-					<CONTROL ID=80 type="ÊýÖµ" name="Integer">
+					<CONTROL ID=80 type="æ•°å€¼" name="Integer">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Integer</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Integer</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>

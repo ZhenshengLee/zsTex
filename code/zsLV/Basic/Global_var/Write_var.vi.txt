@@ -8,34 +8,34 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=80 type=" ˝÷µ" name="Global_Planner_Recyle">
+	<CONTROL ID=80 type="Êï∞ÂÄº" name="Global_Planner_Recyle">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Global_Planner_Recyle</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Global_Planner_Recyle</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type=" ˝÷µ" name="Global_Planner_Recyle 2">
+	<CONTROL ID=80 type="Êï∞ÂÄº" name="Global_Planner_Recyle 2">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Global_Planner_Recyle 2</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Global_Planner_Recyle 2</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=79 type="≤º∂˚" name="Õ£÷π">
+	<CONTROL ID=79 type="Â∏ÉÂ∞î" name="ÂÅúÊ≠¢">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>Õ£÷π</STRING></STRINGS></MLABEL></PART>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Õ£÷π</STEXT></LABEL></PART>
+			<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>ÂÅúÊ≠¢</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÂÅúÊ≠¢</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=79 type="≤º∂˚" name="Õ£÷π 2">
+	<CONTROL ID=79 type="Â∏ÉÂ∞î" name="ÂÅúÊ≠¢ 2">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>Õ£÷π</STRING></STRINGS></MLABEL></PART>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Õ£÷π 2</STEXT></LABEL></PART>
+			<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=APPFONT color=FF0000><STRINGS><STRING>ÂÅúÊ≠¢</STRING></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>ÂÅúÊ≠¢ 2</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
 </CONTENT>
@@ -43,13 +43,13 @@
 	<NODE ID=33 type="While Loop">
 		<DESC></DESC>
 		<BDCONTENT>
-			<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="µ»¥˝ ±º‰£®∫¡√Î£©">
+			<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="Á≠âÂæÖÊó∂Èó¥ÔºàÊØ´ÁßíÔºâ">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
 				</PARTS>
 			</CONTROL>
-			<NODE ID=47 type="Function" primID=54494157 primName="µ»¥˝(ms)">
+			<NODE ID=47 type="Function" primID=54494157 primName="Á≠âÂæÖ(ms)">
 				<DESC></DESC>
 			</NODE>
 			<NODE ID=50 type="Global Variable" subVIName="Global_var.vi">
@@ -60,13 +60,13 @@
 	<NODE ID=33 type="While Loop">
 		<DESC></DESC>
 		<BDCONTENT>
-			<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="µ»¥˝ ±º‰£®∫¡√Î£©">
+			<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="Á≠âÂæÖÊó∂Èó¥ÔºàÊØ´ÁßíÔºâ">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
 				</PARTS>
 			</CONTROL>
-			<NODE ID=47 type="Function" primID=54494157 primName="µ»¥˝(ms)">
+			<NODE ID=47 type="Function" primID=54494157 primName="Á≠âÂæÖ(ms)">
 				<DESC></DESC>
 			</NODE>
 			<NODE ID=213 type="Event Struct">

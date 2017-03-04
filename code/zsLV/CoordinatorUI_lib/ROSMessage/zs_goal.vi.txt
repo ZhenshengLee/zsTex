@@ -8,33 +8,33 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=80 type="ÊýÖµ" name="Point.y">
+	<CONTROL ID=80 type="æ•°å€¼" name="Point.y">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Point.y</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Point.y</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type="ÊýÖµ" name="Point.x">
+	<CONTROL ID=80 type="æ•°å€¼" name="Point.x">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Point.x</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Point.x</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type="ÊýÖµ" name="Yaw (z)">
+	<CONTROL ID=80 type="æ•°å€¼" name="Yaw (z)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Yaw (z)</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Yaw (z)</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=81 type="×Ö·û´®" name="msg out">
+	<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="msg out">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>msg out</STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>msg out</STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>
@@ -43,12 +43,12 @@
 	<NODE ID=99 type="(Un)Bundle by Name">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=100 type="×Ô¶¨ÒåÀàÐÍ" name="Orientation">
+	<CONTROL ID=100 type="è‡ªå®šä¹‰ç±»åž‹" name="Orientation">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="×Ô¶¨ÒåÀàÐÍ¿Ø¼þ">
-				<CONTROL ID=83 type="´Ø³£Á¿" name="">
+			<PART ID=8010 order=0 type="è‡ªå®šä¹‰ç±»åž‹æŽ§ä»¶">
+				<CONTROL ID=83 type="ç°‡å¸¸é‡" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
@@ -57,19 +57,19 @@
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="Yaw (z)">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="Yaw (z)">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="Pitch (x)">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="Pitch (x)">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="Roll (y)">
+						<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="Roll (y)">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -83,7 +83,7 @@
 	<NODE ID=99 type="(Un)Bundle by Name">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="From Degrees? (T)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="From Degrees? (T)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -92,12 +92,12 @@
 	<NODE ID=49 type="SubVI" name="PRY_to_Quat.vi" subVIName="PRY_to_Quat.vi">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=100 type="×Ô¶¨ÒåÀàÐÍ" name="Pose">
+	<CONTROL ID=100 type="è‡ªå®šä¹‰ç±»åž‹" name="Pose">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="×Ô¶¨ÒåÀàÐÍ¿Ø¼þ">
-				<CONTROL ID=83 type="´Ø³£Á¿" name="">
+			<PART ID=8010 order=0 type="è‡ªå®šä¹‰ç±»åž‹æŽ§ä»¶">
+				<CONTROL ID=83 type="ç°‡å¸¸é‡" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
@@ -106,7 +106,7 @@
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=83 type="´Ø³£Á¿" name="Quaternion">
+						<CONTROL ID=83 type="ç°‡å¸¸é‡" name="Quaternion">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -115,25 +115,25 @@
 								<GROUPER>
 									<PARTS>
 									</PARTS></GROUPER>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="w">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="w">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="z">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="z">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="y">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="y">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="x">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="x">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
@@ -141,7 +141,7 @@
 								</CONTROL>
 							</CONTENT>
 						</CONTROL>
-						<CONTROL ID=83 type="´Ø³£Á¿" name="Point">
+						<CONTROL ID=83 type="ç°‡å¸¸é‡" name="Point">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -150,19 +150,19 @@
 								<GROUPER>
 									<PARTS>
 									</PARTS></GROUPER>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="z">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="z">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="y">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="y">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="x">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="x">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>

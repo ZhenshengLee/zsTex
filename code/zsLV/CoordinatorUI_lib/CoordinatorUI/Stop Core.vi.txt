@@ -11,18 +11,18 @@
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>State Pattern in</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>State Pattern in</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>State Pattern out</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>State Pattern out</STEXT></LABEL></PART>
 	</PARTS>
-	<CONTROL ID=80 type="ÊıÖµ" name="final error code">
+	<CONTROL ID=80 type="æ•°å€¼" name="final error code">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
 </CONTENT>

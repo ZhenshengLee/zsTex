@@ -7,78 +7,78 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="¥ÿ" name="¿‡ÀΩ”– ˝æ›µƒ¥ÿ">
+	<CONTROL ID=83 type="Á∞á" name="Á±ªÁßÅÊúâÊï∞ÊçÆÁöÑÁ∞á">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>¿‡ÀΩ”– ˝æ›µƒ¥ÿ</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Á±ªÁßÅÊúâÊï∞ÊçÆÁöÑÁ∞á</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=85 type="”√ªß ¬º˛“˝”√æ‰±˙" name="Enum">
+			<CONTROL ID=85 type="Áî®Êà∑‰∫ã‰ª∂ÂºïÁî®Âè•ÊüÑ" name="Enum">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
 					<CONTROL ID=87 type="Enum" name="Enum">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=12 order=0 type="œ¬¿≠¡–±ÌŒƒ±æ"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
-							<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
+							<PART ID=12 order=0 type="‰∏ãÊãâÂàóË°®ÊñáÊú¨"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Enum</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>
 			</CONTROL>
-			<CONTROL ID=85 type="”√ªß ¬º˛“˝”√æ‰±˙" name="Stop">
+			<CONTROL ID=85 type="Áî®Êà∑‰∫ã‰ª∂ÂºïÁî®Âè•ÊüÑ" name="Stop">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
-					<CONTROL ID=79 type="≤º∂˚" name="Stop">
+					<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Stop">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Stop</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>
 			</CONTROL>
-			<CONTROL ID=85 type="”√ªß ¬º˛“˝”√æ‰±˙" name="Text">
+			<CONTROL ID=85 type="Áî®Êà∑‰∫ã‰ª∂ÂºïÁî®Âè•ÊüÑ" name="Text">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Text</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Text</STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
-					<CONTROL ID=81 type="◊÷∑˚¥Æ" name="Text">
+					<CONTROL ID=81 type="Â≠óÁ¨¶‰∏≤" name="Text">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=11 order=0 type="Œƒ±æ"><LABEL><STEXT></STEXT></LABEL></PART>
-							<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Text</STEXT></LABEL></PART>
+							<PART ID=11 order=0 type="ÊñáÊú¨"><LABEL><STEXT></STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Text</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>
 			</CONTROL>
-			<CONTROL ID=85 type="”√ªß ¬º˛“˝”√æ‰±˙" name="Update">
+			<CONTROL ID=85 type="Áî®Êà∑‰∫ã‰ª∂ÂºïÁî®Âè•ÊüÑ" name="Update">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 				</PARTS>
 				<CONTENT>
-					<CONTROL ID=79 type="≤º∂˚" name="stop signal">
+					<CONTROL ID=79 type="Â∏ÉÂ∞î" name="stop signal">
 						<DESC></DESC>
 						<TIP></TIP>
 						<PARTS>
-							<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>stop signal</STEXT></LABEL></PART>
+							<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>stop signal</STEXT></LABEL></PART>
 						</PARTS>
 					</CONTROL>
 				</CONTENT>

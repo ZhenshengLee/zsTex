@@ -8,392 +8,392 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="XBOX_Control">
+	<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="XBOX_Control">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-				<CONTROL ID=83 type="¥ÿ" name="">
+			<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+				<CONTROL ID=83 type="Á∞á" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
-						<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+						<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 					</PARTS>
 					<CONTENT>
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Buttons">
+						<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Buttons">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-									<CONTROL ID=83 type="¥ÿ" name="">
+								<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+									<CONTROL ID=83 type="Á∞á" name="">
 										<DESC></DESC>
 										<TIP></TIP>
 										<PARTS>
-											<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+											<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 										</PARTS>
 										<CONTENT>
 											<GROUPER>
 												<PARTS>
 												</PARTS></GROUPER>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="A">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="A">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="B">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="B">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="X">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="X">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Y">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Y">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="View Button">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="View Button">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Menu Button">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Menu Button">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Left Stick">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Left Stick">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Right Stick">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Right Stick">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Left Bumper">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Left Bumper">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="Right Bumper">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="Right Bumper">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-														<CONTROL ID=79 type="≤º∂˚" name="">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+														<CONTROL ID=79 type="Â∏ÉÂ∞î" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><STRINGS><STRING>Boolean Text</STRING></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Blank Button</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
 										</CONTENT>
 									</CONTROL>
 								</PART>
-								<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Buttons</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Buttons</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="All Axis">
+						<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="All Axis">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-									<CONTROL ID=83 type="¥ÿ" name="">
+								<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+									<CONTROL ID=83 type="Á∞á" name="">
 										<DESC></DESC>
 										<TIP></TIP>
 										<PARTS>
-											<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+											<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 										</PARTS>
 										<CONTENT>
 											<GROUPER>
 												<PARTS>
 												</PARTS></GROUPER>
-											<CONTROL ID=83 type="¥ÿ" name="Left Stick">
+											<CONTROL ID=83 type="Á∞á" name="Left Stick">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Left Stick</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Left Stick</STEXT></LABEL></PART>
 												</PARTS>
 												<CONTENT>
 													<GROUPER>
 														<PARTS>
 														</PARTS></GROUPER>
-													<CONTROL ID=80 type=" ˝÷µ" name="Y Axis">
+													<CONTROL ID=80 type="Êï∞ÂÄº" name="Y Axis">
 														<DESC></DESC>
 														<TIP></TIP>
 														<PARTS>
-															<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
+															<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
 														</PARTS>
 													</CONTROL>
-													<CONTROL ID=80 type=" ˝÷µ" name="X Axis">
+													<CONTROL ID=80 type="Êï∞ÂÄº" name="X Axis">
 														<DESC></DESC>
 														<TIP></TIP>
 														<PARTS>
-															<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
+															<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
 														</PARTS>
 													</CONTROL>
 												</CONTENT>
 											</CONTROL>
-											<CONTROL ID=83 type="¥ÿ" name="Right Stick">
+											<CONTROL ID=83 type="Á∞á" name="Right Stick">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Right Stick</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Right Stick</STEXT></LABEL></PART>
 												</PARTS>
 												<CONTENT>
 													<GROUPER>
 														<PARTS>
 														</PARTS></GROUPER>
-													<CONTROL ID=80 type=" ˝÷µ" name="Y Axis">
+													<CONTROL ID=80 type="Êï∞ÂÄº" name="Y Axis">
 														<DESC></DESC>
 														<TIP></TIP>
 														<PARTS>
-															<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
+															<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Y Axis</STEXT></LABEL></PART>
 														</PARTS>
 													</CONTROL>
-													<CONTROL ID=80 type=" ˝÷µ" name="X Axis">
+													<CONTROL ID=80 type="Êï∞ÂÄº" name="X Axis">
 														<DESC></DESC>
 														<TIP></TIP>
 														<PARTS>
-															<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
+															<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>X Axis</STEXT></LABEL></PART>
 														</PARTS>
 													</CONTROL>
 												</CONTENT>
 											</CONTROL>
-											<CONTROL ID=80 type=" ˝÷µ" name="Triggers">
+											<CONTROL ID=80 type="Êï∞ÂÄº" name="Triggers">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Triggers</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Triggers</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
-											<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="D-Pad">
+											<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="D-Pad">
 												<DESC></DESC>
 												<TIP></TIP>
 												<PARTS>
-													<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
+													<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
 														<CONTROL ID=87 type="Enum" name="">
 															<DESC></DESC>
 															<TIP></TIP>
 															<PARTS>
-																<PART ID=12 order=0 type="œ¬¿≠¡–±ÌŒƒ±æ"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
-																<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+																<PART ID=12 order=0 type="‰∏ãÊãâÂàóË°®ÊñáÊú¨"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+																<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 															</PARTS>
 														</CONTROL>
 													</PART>
-													<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>D-Pad</STEXT></LABEL></PART>
+													<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>D-Pad</STEXT></LABEL></PART>
 												</PARTS>
 											</CONTROL>
 										</CONTENT>
 									</CONTROL>
 								</PART>
-								<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>All Axis</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>All Axis</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
 					</CONTENT>
 				</CONTROL>
 			</PART>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>XBOX_Control</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>XBOX_Control</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=100 type="◊‘∂®“Â¿‡–Õ" name="P3AT_Panel">
+	<CONTROL ID=100 type="Ëá™ÂÆö‰πâÁ±ªÂûã" name="P3AT_Panel">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="◊‘∂®“Â¿‡–Õøÿº˛">
-				<CONTROL ID=83 type="¥ÿ" name="">
+			<PART ID=8010 order=0 type="Ëá™ÂÆö‰πâÁ±ªÂûãÊéß‰ª∂">
+				<CONTROL ID=83 type="Á∞á" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
-						<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT></STEXT></LABEL></PART>
+						<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT></STEXT></LABEL></PART>
 					</PARTS>
 					<CONTENT>
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=88 type="ª¨∂Ø∏À" name="max_vel">
+						<CONTROL ID=88 type="ÊªëÂä®ÊùÜ" name="max_vel">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>max_vel</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=88 type="ª¨∂Ø∏À" name="max_rot">
+						<CONTROL ID=88 type="ÊªëÂä®ÊùÜ" name="max_rot">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>max_rot</STEXT></LABEL></PART>
 							</PARTS>
 						</CONTROL>
-						<CONTROL ID=239 type="µ•—°∞¥≈•" name="Control_Mode">
+						<CONTROL ID=239 type="ÂçïÈÄâÊåâÈíÆ" name="Control_Mode">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
-								<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
+								<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>Control_Mode</STEXT></LABEL></PART>
 							</PARTS>
 							<CONTENT>
 								<GROUPER>
 									<PARTS>
 									</PARTS></GROUPER>
-								<CONTROL ID=79 type="≤º∂˚" name="Voice">
+								<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Voice">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
-										<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
-										<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
+										<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Voice</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Voice</STEXT></LABEL></PART>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=79 type="≤º∂˚" name="Map">
+								<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Map">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
-										<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
-										<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
+										<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Map</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Map</STEXT></LABEL></PART>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=79 type="≤º∂˚" name="Joy">
+								<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Joy">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
-										<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy/Stop</STRING></STRINGS></MLABEL></PART>
-										<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
+										<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Joy/Stop</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Joy</STEXT></LABEL></PART>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=79 type="≤º∂˚" name="Input">
+								<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Input">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
-										<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
-										<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
+										<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Input</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Input</STEXT></LABEL></PART>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=79 type="≤º∂˚" name="Undefined">
+								<CONTROL ID=79 type="Â∏ÉÂ∞î" name="Undefined">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
-										<PART ID=22 order=0 type="≤º∂˚Œƒ±æ"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Undefined</STRING></STRINGS></MLABEL></PART>
-										<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
+										<PART ID=22 order=0 type="Â∏ÉÂ∞îÊñáÊú¨"><MLABEL><FONT predef=DLGFONT color=100003C><STRINGS><STRING>Undefined</STRING></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>Undefined</STEXT></LABEL></PART>
 									</PARTS>
 								</CONTROL>
 							</CONTENT>
@@ -401,45 +401,45 @@
 					</CONTENT>
 				</CONTROL>
 			</PART>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>P3AT_Panel</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>P3AT_Panel</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type=" ˝÷µ" name="rot_z">
+	<CONTROL ID=80 type="Êï∞ÂÄº" name="rot_z">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type=" ˝÷µ" name="lin_x">
+	<CONTROL ID=80 type="Êï∞ÂÄº" name="lin_x">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=83 type="¥ÿ" name="vel_cal">
+	<CONTROL ID=83 type="Á∞á" name="vel_cal">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>vel_cal</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>vel_cal</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type=" ˝÷µ" name="lin_x">
+			<CONTROL ID=80 type="Êï∞ÂÄº" name="lin_x">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>lin_x</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type=" ˝÷µ" name="rot_z">
+			<CONTROL ID=80 type="Êï∞ÂÄº" name="rot_z">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±ÍÃ‚"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="Ê†áÈ¢ò"><LABEL><STEXT>rot_z</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
 		</CONTENT>
@@ -447,49 +447,49 @@
 </CONTENT>
 <BDCONTENT>
 	<LABEL><STEXT>dead_zone</STEXT></LABEL>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="t">
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="t">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=4C455342 primName="—°‘Ò">
+	<NODE ID=47 type="Function" primID=4C455342 primName="ÈÄâÊã©">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="t">
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="t">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=4C455342 primName="—°‘Ò">
+	<NODE ID=47 type="Function" primID=4C455342 primName="ÈÄâÊã©">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="y">
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="y">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=2020544C primName="–°”⁄£ø">
+	<NODE ID=47 type="Function" primID=2020544C primName="Â∞è‰∫éÔºü">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="y">
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="y">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
 		</PARTS>
 	</CONTROL>
-	<NODE ID=47 type="Function" primID=2020544C primName="–°”⁄£ø">
+	<NODE ID=47 type="Function" primID=2020544C primName="Â∞è‰∫éÔºü">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=20534241 primName="æ¯∂‘÷µ">
+	<NODE ID=47 type="Function" primID=20534241 primName="ÁªùÂØπÂÄº">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=20534241 primName="æ¯∂‘÷µ">
+	<NODE ID=47 type="Function" primID=20534241 primName="ÁªùÂØπÂÄº">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" >
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" >
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -498,7 +498,7 @@
 	<NODE ID=99 type="(Un)Bundle by Name">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=83 type="¥ÿ≥£¡ø" name="vel_cal">
+	<CONTROL ID=83 type="Á∞áÂ∏∏Èáè" name="vel_cal">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -507,13 +507,13 @@
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="lin_x">
+			<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="lin_x">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type=" ˝÷µ≥£¡ø" name="rot_z">
+			<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" name="rot_z">
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>
@@ -521,11 +521,11 @@
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<LABEL><STEXT>TODO:  π”√∑ΩœÚº¸º∆À„ÀŸ∂»÷µ<LF>
- π”√∏¸∂‡µƒ ÷±˙∞¥º¸</STEXT></LABEL>
-	<LABEL><STEXT>∏˘æ› ÷±˙µƒ≤Ÿ◊›∏Àº∆À„≥ˆ<LF>
-cmd_velµƒ÷µ£¨∑¢ÀÕ∏¯ROSARIA</STEXT></LABEL>
-	<CONTROL ID=80 type=" ˝÷µ≥£¡ø" >
+	<LABEL><STEXT>TODO: ‰ΩøÁî®ÊñπÂêëÈîÆËÆ°ÁÆóÈÄüÂ∫¶ÂÄº<LF>
+‰ΩøÁî®Êõ¥Â§öÁöÑÊâãÊüÑÊåâÈîÆ</STEXT></LABEL>
+	<LABEL><STEXT>Ê†πÊçÆÊâãÊüÑÁöÑÊìçÁ∫µÊùÜËÆ°ÁÆóÂá∫<LF>
+cmd_velÁöÑÂÄºÔºåÂèëÈÄÅÁªôROSARIA</STEXT></LABEL>
+	<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" >
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
@@ -534,21 +534,21 @@ cmd_velµƒ÷µ£¨∑¢ÀÕ∏¯ROSARIA</STEXT></LABEL>
 	<NODE ID=44 type="Select">
 		<DESC></DESC>
 		<BDCONTENT>
-			<NODE ID=47 type="Function" primID=204C554D primName="≥À">
+			<NODE ID=47 type="Function" primID=204C554D primName="‰πò">
 				<DESC></DESC>
 			</NODE>
-			<NODE ID=47 type="Function" primID=204C554D primName="≥À">
+			<NODE ID=47 type="Function" primID=204C554D primName="‰πò">
 				<DESC></DESC>
 			</NODE>
-			<NODE ID=47 type="Function" primID=20564944 primName="≥˝">
+			<NODE ID=47 type="Function" primID=20564944 primName="Èô§">
 				<DESC></DESC>
 			</NODE>
-			<NODE ID=47 type="Function" primID=20564944 primName="≥˝">
+			<NODE ID=47 type="Function" primID=20564944 primName="Èô§">
 				<DESC></DESC>
 			</NODE>
 		</BDCONTENT>
 		<BDCONTENT>
-			<CONTROL ID=80 type=" ˝÷µ≥£¡ø" >
+			<CONTROL ID=80 type="Êï∞ÂÄºÂ∏∏Èáè" >
 				<DESC></DESC>
 				<TIP></TIP>
 				<PARTS>

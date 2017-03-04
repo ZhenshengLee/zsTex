@@ -15,57 +15,57 @@ This method may return error code 678010: Illegal substitution. Overrides of thi
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Current CommonState</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Current CommonState</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Substitute Actor out</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Substitute Actor out</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Substitute Actor in</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Substitute Actor in</STEXT></LABEL></PART>
 	</PARTS>
-	<CONTROL ID=83 type="´Ø" name="error out">
+	<CONTROL ID=83 type="ç°‡" name="error out">
 		<DESC><<B>>error out<</B>> passes error or warning information out of a VI to be used by other VIs.<LF>
 <LF>
 Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>error out</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
 				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
 <LF>
 Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>status</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>status</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="code">
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
 				<DESC><<B>>code<</B>> is the error or warning code.<LF>
 <LF>
 Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>code</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>code</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
 				<DESC><<B>>source<</B>> string describes the origin of the error or warning.<LF>
 <LF>
 Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>source</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>source</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
@@ -76,7 +76,7 @@ Right-click the <<B>>error out<</B>> indicator on the front panel and select <<B
 	<NODE ID=99 type="(Un)Bundle by Name">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" primID=54534344 primName="×ª»»ÎªÌØ¶¨µÄÀà">
+	<NODE ID=47 type="Function" primID=54534344 primName="è½¬æ¢ä¸ºç‰¹å®šçš„ç±»">
 		<DESC></DESC>
 	</NODE>
 	<NODE ID=99 type="(Un)Bundle by Name">

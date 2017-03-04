@@ -8,27 +8,27 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=81 type="×Ö·û´®" name="msg out">
+	<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="msg out">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>msg out</STEXT></LABEL></PART>
+			<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>msg out</STEXT></LABEL></PART>
 		</PARTS>
 		<DEFAULT><SAME_AS_LABEL></DEFAULT>
 	</CONTROL>
-	<CONTROL ID=80 type="ÊýÖµ" name="Linear.x">
+	<CONTROL ID=80 type="æ•°å€¼" name="Linear.x">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Linear.x</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Linear.x</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
-	<CONTROL ID=80 type="ÊýÖµ" name="Angular.z">
+	<CONTROL ID=80 type="æ•°å€¼" name="Angular.z">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>Angular.z</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>Angular.z</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
 </CONTENT>
@@ -36,12 +36,12 @@
 	<NODE ID=99 type="(Un)Bundle by Name">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=100 type="×Ô¶¨ÒåÀàÐÍ" name="Twist">
+	<CONTROL ID=100 type="è‡ªå®šä¹‰ç±»åž‹" name="Twist">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=8010 order=0 type="×Ô¶¨ÒåÀàÐÍ¿Ø¼þ">
-				<CONTROL ID=83 type="´Ø³£Á¿" name="">
+			<PART ID=8010 order=0 type="è‡ªå®šä¹‰ç±»åž‹æŽ§ä»¶">
+				<CONTROL ID=83 type="ç°‡å¸¸é‡" name="">
 					<DESC></DESC>
 					<TIP></TIP>
 					<PARTS>
@@ -50,7 +50,7 @@
 						<GROUPER>
 							<PARTS>
 							</PARTS></GROUPER>
-						<CONTROL ID=83 type="´Ø³£Á¿" name="Angular">
+						<CONTROL ID=83 type="ç°‡å¸¸é‡" name="Angular">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -59,19 +59,19 @@
 								<GROUPER>
 									<PARTS>
 									</PARTS></GROUPER>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="z">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="z">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="y">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="y">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="x">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="x">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
@@ -79,7 +79,7 @@
 								</CONTROL>
 							</CONTENT>
 						</CONTROL>
-						<CONTROL ID=83 type="´Ø³£Á¿" name="Linear">
+						<CONTROL ID=83 type="ç°‡å¸¸é‡" name="Linear">
 							<DESC></DESC>
 							<TIP></TIP>
 							<PARTS>
@@ -88,19 +88,19 @@
 								<GROUPER>
 									<PARTS>
 									</PARTS></GROUPER>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="z">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="z">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="y">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="y">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>
 									</PARTS>
 								</CONTROL>
-								<CONTROL ID=80 type="ÊýÖµ³£Á¿" name="x">
+								<CONTROL ID=80 type="æ•°å€¼å¸¸é‡" name="x">
 									<DESC></DESC>
 									<TIP></TIP>
 									<PARTS>

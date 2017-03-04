@@ -10,9 +10,9 @@
 		</PARTS></GROUPER>
 </CONTENT>
 <BDCONTENT>
-	<LABEL><STEXT>����Ϊ�滮�õ����У�Э���߸���ִ��<LF>
+	<LABEL><STEXT>输入为规划好的序列，协调者负责执行<LF>
 <LF>
-��������Ϊ����ǰ�㣬����ģʽ��move_base״̬��</STEXT></LABEL>
+输入至少为：当前点，控制模式，move_base状态等</STEXT></LABEL>
 </BDCONTENT>
 </VI>
 

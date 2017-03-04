@@ -8,89 +8,89 @@
 	<GROUPER>
 		<PARTS>
 		</PARTS></GROUPER>
-	<CONTROL ID=83 type="´Ø" name="error out">
+	<CONTROL ID=83 type="ç°‡" name="error out">
 		<DESC><<B>>error in<</B>> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>error out</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>error out</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
 				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>status</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>status</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="code">
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
 				<DESC><<B>>code<</B>> is the error or warning code.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>code</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>code</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
 				<DESC><<B>>source<</B>> describes the origin of the error or warning.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>source</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>source</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
 		</CONTENT>
 	</CONTROL>
-	<CONTROL ID=83 type="´Ø" name="error in">
+	<CONTROL ID=83 type="ç°‡" name="error in">
 		<DESC><<B>>error in<</B>> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>error in</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>error in</STEXT></LABEL></PART>
 		</PARTS>
 		<CONTENT>
 			<GROUPER>
 				<PARTS>
 				</PARTS></GROUPER>
-			<CONTROL ID=79 type="²¼¶û" name="status">
+			<CONTROL ID=79 type="å¸ƒå°”" name="status">
 				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=22 order=0 type="²¼¶ûÎÄ±¾"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>status</STEXT></LABEL></PART>
+					<PART ID=22 order=0 type="å¸ƒå°”æ–‡æœ¬"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>status</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=80 type="ÊýÖµ" name="code">
+			<CONTROL ID=80 type="æ•°å€¼" name="code">
 				<DESC><<B>>code<</B>> is the error or warning code.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>code</STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>code</STEXT></LABEL></PART>
 				</PARTS>
 			</CONTROL>
-			<CONTROL ID=81 type="×Ö·û´®" name="source">
+			<CONTROL ID=81 type="å­—ç¬¦ä¸²" name="source">
 				<DESC><<B>>source<</B>> describes the origin of the error or warning.<LF>
 <LF>
 Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>Explain Error<</B>> or <<B>>Explain Warning<</B>> from the shortcut menu for more information about the error.</DESC>
 				<TIP></TIP>
 				<PARTS>
-					<PART ID=11 order=0 type="ÎÄ±¾"><LABEL><STEXT></STEXT></LABEL></PART>
-					<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>source</STEXT></LABEL></PART>
+					<PART ID=11 order=0 type="æ–‡æœ¬"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>source</STEXT></LABEL></PART>
 				</PARTS>
 				<DEFAULT><SAME_AS_LABEL></DEFAULT>
 			</CONTROL>
@@ -99,12 +99,12 @@ Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>E
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=SYSFONT>My Application</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=SYSFONT>My Application</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC></DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT><FONT predef=SYSFONT>Actor out</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT><FONT predef=SYSFONT>Actor out</STEXT></LABEL></PART>
 	</PARTS>
 </CONTENT>
 <BDCONTENT>
@@ -112,7 +112,7 @@ Right-click the <<B>>error in<</B>> control on the front panel and select <<B>>E
 	<TIP></TIP>
 	<PARTS>
 	</PARTS>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="Open Actor Core front panel? (F)">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="Open Actor Core front panel? (F)">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>

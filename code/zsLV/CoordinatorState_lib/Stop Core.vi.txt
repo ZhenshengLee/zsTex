@@ -17,18 +17,18 @@ By default, this method does nothing. A descendant class may override it to defi
 	<DESC><<B>>Actor in<</B>> specifies the state of the actor after it has stopped handling messages.</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>CommonState in</STEXT></LABEL></PART>
 	</PARTS>
 	<DESC><<B>>Actor out<</B>> returns the actor.</DESC>
 	<TIP></TIP>
 	<PARTS>
-		<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>CommonState out</STEXT></LABEL></PART>
+		<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>CommonState out</STEXT></LABEL></PART>
 	</PARTS>
-	<CONTROL ID=80 type="ÊýÖµ" name="final error code">
+	<CONTROL ID=80 type="æ•°å€¼" name="final error code">
 		<DESC><<B>>final error code<</B>> specifies the error code, if any, that caused this actor to shut down.</DESC>
 		<TIP></TIP>
 		<PARTS>
-			<PART ID=82 order=0 type="±êÌâ"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="æ ‡é¢˜"><LABEL><STEXT>final error code</STEXT></LABEL></PART>
 		</PARTS>
 	</CONTROL>
 </CONTENT>
@@ -48,10 +48,10 @@ By default, this method does nothing. A descendant class may override it to defi
 	<NODE ID=49 type="SubVI" subVIName="Send Normal or Emergency Stop.vi">
 		<DESC></DESC>
 	</NODE>
-	<NODE ID=47 type="Function" name="²úÉúÓÃ»§ÊÂ¼þ" primID=76455546 primName="²úÉúÓÃ»§ÊÂ¼þ">
+	<NODE ID=47 type="Function" name="äº§ç”Ÿç”¨æˆ·äº‹ä»¶" primID=76455546 primName="äº§ç”Ÿç”¨æˆ·äº‹ä»¶">
 		<DESC></DESC>
 	</NODE>
-	<CONTROL ID=79 type="¼Ù³£Á¿" name="event data">
+	<CONTROL ID=79 type="å‡å¸¸é‡" name="event data">
 		<DESC></DESC>
 		<TIP></TIP>
 		<PARTS>
